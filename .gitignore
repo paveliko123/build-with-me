@@ -27,3 +27,4 @@ service-account*.json
 # Local only: Claude Code session settings and review scratch files
 /.claude/
 /.tmp/
+docs/plan/.live/
