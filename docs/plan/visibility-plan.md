@@ -1,19 +1,21 @@
 ---
 doc: visibility-plan
-status: draft, under planning review
+status: draft, under planning review (round 1 fixes applied)
 updated: 2026-11-05
 step: ST-5
 ---
 
-# Build With Me at Home: Visibility Plan
+# Build With Me: Visibility Plan
 
 Replaces the first draft (`Downloads\build-with-me-visibility-plan.md`, 2026-11-05), which was written without the
-project's context. Decisions D-24 to D-32 and assumptions A-1 to A-5 are in `docs/plan/decisions.md`.
+project's context. Decisions D-24 to D-32 and assumptions A-1 to A-5 are in `docs/plan/decisions.md`. The repo was
+renamed 2026-11-05 (owner yes): `github.com/paveliko123/build-with-me`, demo `https://paveliko123.github.io/build-with-me/`.
+In-app screens keep "Build With Me at Home".
 
 ## 1. Goal and limits
 
 - **Goal (D-25):** GitHub visibility first: stars and a findable listing. A few real families trying it are a bonus,
-  not a target.
+  not a target (§7 tracks them as a signal only).
 - **Time (A-1):** about 2–3 hours a week of the owner's time. Few places, each worth the time, not 20 posts for one
   click each.
 - **Tone (D-26):** "an open-source Claude Code plugin for parents". Never "kid-safe", "guardrails" as a label, or
@@ -23,8 +25,9 @@ project's context. Decisions D-24 to D-32 and assumptions A-1 to A-5 are in `doc
 - **Version (D-27):** launch 0.1.2 as it is, tagged `v0.1.2`. Open safety items are listed as known limitations.
 - **Not used:** LinkedIn (A-2 overturned, owner's choice), paid promotion, Product Hunt.
 - **Where it stands today (checked 2026-11-05):** 1 star, 0 forks, repo created 2026-10-07 with commits since.
-  The repo has an About description but no website link, no topics, no releases and no issue forms. The owner's
-  GitHub profile is empty (no name, bio, picture or profile README).
+  The repo has an About description and a website link (the new demo URL), but no topics, no releases and no issue
+  forms; GitHub shows its license as "Other" (see P-1). The owner's profile has a name, bio, profile README and the
+  pinned repo; its website link still holds the old demo URL (404) and the picture is not confirmed.
 
 ## 2. Phase 0: fix before any outreach
 
@@ -33,15 +36,17 @@ is checked.
 
 | # | Item | Done when |
 |---|---|---|
-| P-1 | **Remove the hackathon story (D-32).** Rename `devpost/` to `docs/design/`; update the paths in code comments, README, SECURITY.md and `.gitignore`; drop the demo page's "modified Devpost…" bullet; shorten the README credit to one line under Credits. Keep the MIT notices in `LICENSE` and `app/skills/LICENSE`, the course skills themselves, and the guide's internal name-mapping lines in `server/journey/prompt/wrapperLayer.ts` (kids never see them). | A search of tracked files outside `app/skills`, `app/dist/skills`, `LICENSE`, the prompt files and `docs/design/` finds no "devpost" or "hackathon"; `npm test` and the build pass. |
-| P-2 | **README first screen (§3).** | The first screen (no scrolling at 1366×768) shows what it is, who it's for, the GIF and the demo link. |
+| P-1 | **Remove the hackathon story (D-32).** Rename `devpost/` to `docs/design/`; update the paths in code comments, README, SECURITY.md and `.gitignore`; drop the demo page's "modified Devpost…" bullet; shorten the README credit to one line under Credits. Make the root `LICENSE` plain MIT so GitHub recognizes it (A-9), with the Devpost notice kept in `app/skills/LICENSE` and the README credit line; keep the course skills themselves and the guide's internal name-mapping lines in `server/journey/prompt/wrapperLayer.ts` (kids never see them). | A search of tracked files outside `app/skills`, `app/dist/skills`, `LICENSE`, `server/journey/prompt/` (incl. the `safety.ts` check pattern, which must stay), `app/dist` (rebuilt from it), `docs/design/` and `docs/plan/` finds no "devpost" or "hackathon"; the scripts' own write paths (`scripts/e1-isolation.ts`, `e2-speech.ts`, `idea-page.mjs`, `usage-experiment.ts`) point at `docs/design/`; `npm run typecheck`, `npm run test:guard` and `npm run build` pass (`npm test` doesn't exist). |
+| P-2 | **README first screen (§3).** | At 1366×768 the first screen shows what it is, who it's for, and the GIF and demo link without scrolling (the rest of §3's first-screen list may sit just below). |
 | P-3 | **Mac labeled untested (D-28).** Badge "Windows · Mac untested"; the "What you need" line matches. | Badge and text agree. |
-| P-4 | **Known limitations (D-27, A-3).** SECURITY.md gets a short "Known limitations" list: the open review items in plain terms (what's affected, that each needs something already on the laptop or home network), no step-by-step detail, plus "a hobby project, not professionally audited". | The list names every open item from `docs/design/security-audit.md` (ST-3, ST-4) without exploit steps. |
-| P-5 | **Bug-report form.** `.github/ISSUE_TEMPLATE/bug.yml` with fields: Windows or Mac, Node.js version, Claude plan (Pro, Max), what happened, what you expected. Plus a short "idea" form. | A new issue on GitHub shows both forms. |
-| P-6 | **Release `v0.1.2` (D-27).** Tag the current release commit with short notes: what it does, how to install, known limitations link. | The Releases page shows v0.1.2. |
-| P-7 | **Repo settings (owner clicks).** Website: the demo page. Topics: `claude-code`, `claude-code-plugin`, `kids-coding`, `parents`, `local-first`, `plan-first`. Social preview image: 1280×640 from the video's closing card. | The repo page shows the link and topics; a shared link shows the picture. |
-| P-8 | **GitHub profile (owner clicks, 5 minutes).** Name (first name is enough), bio, picture, the demo page as website, pin the repo. No employer or work email. | The profile shows all five. |
-| P-9 | **Profile README.** Done 2026-11-05 (owner yes): public repo `paveliko123/paveliko123` with the §8 text. | The profile shows the README. |
+| P-4 | **Known limitations (D-27, A-3).** SECURITY.md gets a short "Known limitations" list: the open review items in plain terms (what's affected, that each needs something already on the laptop or home network), no step-by-step detail, plus "a hobby project, not professionally audited". It also says the safety check runs in the guide's conversation by default (audit line 54). | The list names every open ST-3 item from `docs/design/security-audit.md` without exploit steps; the 13 Low/Info ST-4 items get one grouped line (A-3 names only ST-3, D-27 says "open items"; default, owner may change). |
+| P-5 | **Bug-report form.** `.github/ISSUE_TEMPLATE/bug.yml` with fields: Windows or Mac, Node.js version, Claude plan (Pro, Max, Team, Enterprise), what happened, what you expected. Plus a short "idea" form and a `config.yml` that sends security reports to SECURITY.md. | A new issue on GitHub shows both forms and the security link. |
+| P-6 | **Release `v0.1.2` (D-27).** After P-1 to P-5 are merged, tag the Phase 0 merge commit (not `ca17c35`, the 0.1.2 build) with short notes: what it does, how to install, link to the limitations list. The version number stays 0.1.2, so installed copies don't receive Phase 0 changes. | The Releases page shows v0.1.2 and the notes' limitations link works. |
+| P-7 | **Repo settings (owner clicks).** Website: set (new demo URL). Topics: `claude-code`, `claude-code-plugin`, `kids-coding`, `parents`, `local-first`, `plan-first`. Social preview image: 1280×640 from the video's closing card. | The repo page shows the link and topics; a shared link shows the picture. |
+| P-8 | **GitHub profile (owner clicks, 5 minutes).** Name, bio, README and pin are done (decisions.md; seen 2026-11-05). Left: picture, and the website link changed to the new demo URL (the old one is 404). No employer or work email. | The profile shows the picture and a working website link. |
+| P-9 | **Profile README.** Done 2026-11-05 (owner yes): public repo `paveliko123/paveliko123` with the §8 text. | The profile shows the README, with the new repo and demo URLs. |
+| P-10 | **Listen to the whole video (D-29, A-5).** A-5 checked the frames but not the sound. Listen to all 2:33 for a kid's voice, name or school. | None found; if found, trim or replace the video before any outreach (it is already public on YouTube). |
+| P-11 | **Plugin manifest.** Add `homepage` and `repository` to `.claude-plugin/plugin.json` (both missing); run `claude plugin validate --strict` (needed for the listings in §5.1). | Validation passes. |
 
 ## 3. README changes
 
@@ -50,7 +55,7 @@ before → after at build time.
 
 **New first screen, in order:** icon, title and badges (Mac badge per P-3) → the current one-line description
 (it already follows D-26) → the "nothing is sent to the developer" line → a 15–25 s GIF → "Try the 2-minute demo"
-and "Watch the 2½-minute walkthrough" (the video, A-5) → the 18+ note, unchanged.
+and "Watch the 2½-minute walkthrough" (the video, A-5) → the 18+ note, unchanged unless card D-33 (§9) adds a line.
 
 **New sections:**
 - **See it:** three screenshots: a kid's step screen, the *My apps* shelf with real apps (D-29, A-4), the top of a
@@ -70,10 +75,10 @@ weren't checked, and it invites the "how is this different" debate the tone avoi
 
 | Asset | Source | Used in |
 |---|---|---|
-| Walkthrough video | The Devpost video as it is, https://youtu.be/DFgWYG4G0kE, 2:33 (A-5). | README, every post |
+| Walkthrough video | The Devpost video as it is, https://youtu.be/DFgWYG4G0kE, 2:33 (A-5), after P-10. | README, the dev.to post, people and club messages, Reddit; not the listing forms |
 | GIF, 15–25 s, under 10 MB | Cut from a fresh screen recording of the real app: pick a look → a picture card → build progress → the app opens. ScreenToGif (free, Windows) — its download needs the owner's yes. | README top, Reddit |
 | 3 screenshots | Real app, same window size. Real kids' apps allowed (D-29); each checked for a kid's name, school or other personal detail first (A-4). | README "See it", listings |
-| Sample parent report | A report from a made-up kid's session (like the 2026-10-23 "My Coloring Book" demo data), saved as `docs/sample-report.html`. | README, people outreach |
+| Sample parent report | A report from a made-up kid's session (like the 2026-10-23 "My Coloring Book" demo data), saved as `site/sample-report.html`, so it opens on the Pages site (a file under `docs/` would show as source). | README, people outreach |
 
 ## 5. Routes
 
@@ -83,16 +88,20 @@ Ranked by expected value per hour, lowest scrutiny first. Sources: three indepen
 
 ### 5.1 Listings (lasting, low scrutiny, about 15–30 minutes each)
 
-1. **Anthropic's community plugin marketplace.** Submission form linked from
-   https://github.com/anthropics/claude-plugins-community; reviewed with a security scan before approval
-   (Verified). Being listed lets anyone install with Anthropic's own marketplace command. Submit after Phase 0.
-   It may be refused over the 18+ rule (Estimate); a refusal costs only the 20 minutes.
+1. **Anthropic's plugin directory / community marketplace.** Anthropic's docs now say to submit from the developer
+   portal at claude.ai/directory/manage with a paid claude.ai plan, after `claude plugin validate --strict`
+   (Verified: https://code.claude.com/docs/en/plugins/publish.md); the community marketplace repo
+   (https://github.com/anthropics/claude-plugins-community) describes a security scan before approval (Verified).
+   If approved, people can install through Anthropic's marketplace; check the real install command after approval.
+   Submit after Phase 0 (P-11). It may be refused over the 18+ rule (Estimate); see D-33 on whether to ask first.
 2. **awesome-claude-code** (https://github.com/hesreallyhim/awesome-claude-code, ~57k stars). Rules: web issue form
-   filed by a person, repo at least 14 days old with commits after day one or 100+ stars, one plain line
-   (Verified). The repo qualifies (created 2026-10-07).
+   filed by a person, repo at least 14 days old with commits after day one or 100+ stars, one plain line with no
+   emoji, not addressed to the reader (Verified). The repo qualifies (created 2026-10-07). Its guide says a project
+   that requires signup or payment is a blocker for review; this one needs a paid Claude plan, so a refusal is
+   possible (Estimate).
 3. **Plugin directories:** mods4claude (https://mods4claude.com/submit) and ClaudePluginHub
    (https://www.claudepluginhub.com/). Both take a public repo with `.claude-plugin/plugin.json`, which this repo
-   has; both also scan GitHub (Verified). Traffic unknown (Estimate: small but lasting).
+   has; both say they scan GitHub, and mods4claude reviews by hand, so listing isn't guaranteed (Verified). Traffic unknown (Estimate: small but lasting).
 
 ### 5.2 One write-up (lasting)
 
@@ -109,8 +118,10 @@ Ranked by expected value per hour, lowest scrutiny first. Sources: three indepen
    member projects for a "project wall" (Verified). Low scrutiny, small friendly audience. About 10 minutes.
 7. **r/SideProject:** hobbyists sharing free side projects; relaxed self-promotion rules for original creators
    (Researched, Gemini only). Low scrutiny (Estimate). About 15 minutes.
-8. **r/ClaudeAI, showcase flair** (~1.3M members, Researched). Medium scrutiny: a similar dad-built kids' project
+8. **r/ClaudeAI, showcase flair** (size sources disagree, 130k to 1.3M; Gemini says an account needs about 50 karma, unconfirmed). Medium scrutiny: a similar dad-built kids' project
    drew friendly comments and an under-18 question (Verified, Codex). Optional, week 3, only if 5 to 7 went well.
+
+Reddit posts go from the owner's own account; minimum account age or karma for r/ClaudeCode and r/SideProject wasn't confirmed, so check each sub's rules before posting.
 
 Not chosen, to stay inside the time budget: the Claude Discord's `#project-showcase` channel (Researched, Gemini
 only; medium scrutiny with staff present).
@@ -118,19 +129,10 @@ only; medium scrutiny with staff present).
 ### 5.4 People (two or three, D-25)
 
 Write only after reading their recent posts yourself; one personal line from that reading. No lead showed a paid
-plan in words; Claude Code use implies one (Estimate).
+plan in words; Claude Code use implies one (Estimate). Maximum three people, one message each (D-25).
 
-| Person | Evidence (Verified unless marked) | Route |
-|---|---|---|
-| Nate Aune, Nerdy Parents Club | Builds games with "Claude Code and Godot"; son 11; kit "designed for Claude Code" | Reply to the newsletter (same message as route 6) |
-| Daniel Bower | July 2026 post: building a game with his 8-year-old in Claude Code | No invited contact found; skip unless one appears |
-| Necati Demir | Nov 2025 post: his 8-year-old built 30 games with Claude Code | Email on his contact page, framed for professional enquiries: one short note at most |
-| Khe Hy, RadReads newsletter | March 2026 post about paying his 11-year-old daughter to learn Claude, with her own login (Researched, Gemini only; confirm before writing) | Newsletter reply or the contact form on his site |
-
-Checked and dropped: Lars Moelleken (uses Google AI Studio, not Claude), "Mei Park" (wrong name; Diana Park's kid is
-3), "Aidan Marcus" (blog real, surname and contact unconfirmed), Sergej Epp (LinkedIn only, teens), Peter Yang and
-Maryrose Cook (kids about 7, no contact route; Yang's audience is product people), Felix Rieseberg (Anthropic
-employee; the "parents send videos" quote unverified; no cold message).
+The people table, each person's evidence and route, and the "checked and dropped" names are in the local-only file
+`docs/plan/private/outreach-people.md` (not tracked, because this repo is public).
 
 ### 5.5 Skip
 
@@ -139,7 +141,7 @@ employee; the "parents send videos" quote unverified; no cold message).
   High scrutiny. Revisit only after real families have used it. This narrows D-25, which named Show HN: card D-34.
 - **Product Hunt:** hosted-product audience; a terminal install fits poorly (Estimate).
 - **r/ChatGPTCoding self-promotion thread:** allowed, but a broad audience with no fit evidence (Verified, Codex).
-- **A local club session (D-29):** outside the time budget.
+- **A local club session (D-29):** the owner's decision. (Writing to the Nerdy Parents Club newsletter, route 6, is different.)
 
 ## 6. Messages
 
@@ -163,8 +165,8 @@ laptop or a tablet, under your own Claude plan. Their sessions can't touch your 
 separate Claude call checks what's said both ways, and you get a report after each app.
 
 2½-minute walkthrough: https://youtu.be/DFgWYG4G0kE
-Browser demo: https://paveliko123.github.io/build-with-me-at-home/
-Repo: https://github.com/paveliko123/build-with-me-at-home
+Browser demo: https://paveliko123.github.io/build-with-me/
+Repo: https://github.com/paveliko123/build-with-me
 
 If you try it once, I'd love to hear where it falls short. Blunt is fine.
 
@@ -180,10 +182,10 @@ welcome, especially from Mac users".
 
 | When | Work | Owner hours |
 |---|---|---|
-| Week 0 | Phase 0 (Claude builds P-1 to P-6; owner does P-7 and P-8, P-9 is done; the GIF recording and screenshots) | 2–3 |
-| Week 1 | Listings 1–3; the dev.to write-up | 3 |
-| Week 2 | r/ClaudeCode showcase; Nerdy Parents Club; r/SideProject; one person | 2 |
-| Week 3 | Optional r/ClaudeAI; one more person; fix what testers hit | 2–3 |
+| Week 0 | Phase 0 (Claude builds P-1 to P-6 and P-11; owner does P-7, the rest of P-8 and P-10 (listening, 3 min); P-9 is done; the GIF recording and screenshots) | 2–3 |
+| Week 1 | Listings 1–3 | 1–1.5 |
+| Week 2 | The dev.to write-up (A-7); r/ClaudeCode showcase; Nerdy Parents Club | 3 |
+| Week 3 | r/SideProject; one or two people; optional r/ClaudeAI; fix what testers hit | 2–3 |
 | Week 4 | Review the numbers; keep, change or stop | 0.5 |
 
 Every Friday, write down from Insights → Traffic (it keeps only 14 days): stars, unique visitors, top referrers,
@@ -203,17 +205,17 @@ Hi, I'm Pavel 👋
 
 A parent who builds small open-source tools with Claude Code in my spare time.
 
-**[Build With Me at Home](https://github.com/paveliko123/build-with-me-at-home)**: a Claude Code
+**[Build With Me](https://github.com/paveliko123/build-with-me)**: a Claude Code
 plugin for parents. My kids plan and build their own small apps with an AI guide, on my computer
 and my Claude account, while I supervise.
-[Browser demo](https://paveliko123.github.io/build-with-me-at-home/) ·
+[Browser demo](https://paveliko123.github.io/build-with-me/) ·
 [2½-minute walkthrough](https://youtu.be/DFgWYG4G0kE)
 
 Issues and ideas are welcome.
 ```
 
-Bio (160 characters max): "Parent and hobby builder. I make small open-source tools with Claude Code, like Build
-With Me at Home for families."
+Bio (160 characters max), as set: "Parent and hobby builder. I make small open-source tools with Claude Code, like
+"Build With Me" for families."
 
 ## 9. Risks and open questions
 
@@ -222,12 +224,15 @@ With Me at Home for families."
   https://www.anthropic.com/legal/consumer-terms ;
   https://support.claude.com/en/articles/15171100-age-assurance-on-claude). The README already says letting kids
   use it is the parent's decision; it doesn't say a parent's account could be restricted. **Card D-33:** add that
-  line to the README's 18+ note and the FAQ, or not.
+  line to the README's 18+ note and the FAQ, or not. The Reddit outline, the message template and the profile README
+  also say "my kids ... on my account"; the same card decides whether they carry the line, and whether to ask Anthropic
+  before submitting to its directory.
+- **Open cards before build:** D-33 (above) and D-34 (skip Show HN, which narrows D-25).
 - **Small audience:** a paid plan, the Claude Code command-line tool and a terminal. Fine for stars; don't judge
   success by mainstream reach.
 - **Real examples skew younger:** most parents found build with kids of 5–7, not 8–13 (Verified, two researchers).
   The under-13 picture-card path matters more than the teen path in posts.
-- **Similar tools exist** (KidCode, VibeBoy, a commercial kids' Claude Code camp; Researched). If asked, answer in
+- **Similar tools exist** (at least a commercial kids' Claude Code camp; Researched, Claude researcher). If asked, answer in
   one line: free, runs on your computer under your own plan, with a report after every app.
 - **Support load:** the bug form (P-5) collects OS, Node.js version and plan up front.
 - **Listing review:** Anthropic's marketplace may decline it; awesome-claude-code reviews are best effort.
@@ -235,3 +240,4 @@ With Me at Home for families."
 ## Change Log
 
 - 2026-11-05: first draft from the owner's interview (D-24 to D-32) and three research runs.
+- 2026-11-05: review round 1 fixes: repo rename; people moved to a local-only file; P-10, P-11 added; P-1, P-2, P-4 to P-8 corrected; unsourced tool names dropped.
