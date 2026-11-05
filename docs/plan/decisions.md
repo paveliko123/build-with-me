@@ -42,3 +42,7 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
   option A).** README, demo page, SECURITY.md and code-comment paths; the required credit becomes one short line under
   Credits; the guide's internal name-mapping lines stay. Built with the README rewrite, in one pass.
 - Owner yes 2026-11-05: start the rewrite now, at the ~12% job-total estimate, in peak hours.
+- Owner yes 2026-11-05 ("you have access to my github - fix this"): public profile repo `paveliko123/paveliko123`
+  created with the profile README (plan P-9). The owner set name and bio; picture and pin are the owner's clicks.
+- Gemini Flash research merged into the plan 2026-11-05: dev.to write-up, r/SideProject, Khe Hy (all Gemini only,
+  labeled Researched).

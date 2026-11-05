@@ -41,7 +41,7 @@ is checked.
 | P-6 | **Release `v0.1.2` (D-27).** Tag the current release commit with short notes: what it does, how to install, known limitations link. | The Releases page shows v0.1.2. |
 | P-7 | **Repo settings (owner clicks).** Website: the demo page. Topics: `claude-code`, `claude-code-plugin`, `kids-coding`, `parents`, `local-first`, `plan-first`. Social preview image: 1280×640 from the video's closing card. | The repo page shows the link and topics; a shared link shows the picture. |
 | P-8 | **GitHub profile (owner clicks, 5 minutes).** Name (first name is enough), bio, picture, the demo page as website, pin the repo. No employer or work email. | The profile shows all five. |
-| P-9 | **Profile README** (owner yes needed: it creates a public repo `paveliko123/paveliko123`). Draft in §8. | The profile shows the README. |
+| P-9 | **Profile README.** Done 2026-11-05 (owner yes): public repo `paveliko123/paveliko123` with the §8 text. | The profile shows the README. |
 
 ## 3. README changes
 
@@ -94,16 +94,28 @@ Ranked by expected value per hour, lowest scrutiny first. Sources: three indepen
    (https://www.claudepluginhub.com/). Both take a public repo with `.claude-plugin/plugin.json`, which this repo
    has; both also scan GitHub (Verified). Traffic unknown (Estimate: small but lasting).
 
-### 5.2 Communities (one post each, after the listings)
+### 5.2 One write-up (lasting)
 
-4. **r/ClaudeCode weekly showcase thread.** Explicitly welcomes projects: what was built, how Claude Code was used,
+4. **A dev.to post**, "How my kids plan and build small apps with Claude Code, and the plugin I made for it"
+   (A-2: the write-up stays; no LinkedIn). Open publishing, new accounts can post, a friendly developer culture with
+   many developer parents (Researched, Gemini). About 2–3 hours once; it gives every later post and message a link
+   with more depth than the README.
+
+### 5.3 Communities (one post each, after the listings)
+
+5. **r/ClaudeCode weekly showcase thread.** Explicitly welcomes projects: what was built, how Claude Code was used,
    a link, a lesson (Verified). Medium scrutiny (Estimate). About 20 minutes.
-5. **Nerdy Parents Club** (Cambridge, MA): parents building with kids and Claude Code; its newsletter invites
+6. **Nerdy Parents Club** (Cambridge, MA): parents building with kids and Claude Code; its newsletter invites
    member projects for a "project wall" (Verified). Low scrutiny, small friendly audience. About 10 minutes.
-6. **r/ClaudeAI, showcase flair** (~1.3M members, Researched). Medium scrutiny: a similar dad-built kids' project
-   drew friendly comments and an under-18 question (Verified, Codex). Optional, week 3, only if 4 and 5 went well.
+7. **r/SideProject:** hobbyists sharing free side projects; relaxed self-promotion rules for original creators
+   (Researched, Gemini only). Low scrutiny (Estimate). About 15 minutes.
+8. **r/ClaudeAI, showcase flair** (~1.3M members, Researched). Medium scrutiny: a similar dad-built kids' project
+   drew friendly comments and an under-18 question (Verified, Codex). Optional, week 3, only if 5 to 7 went well.
 
-### 5.3 People (two or three, D-25)
+Not chosen, to stay inside the time budget: the Claude Discord's `#project-showcase` channel (Researched, Gemini
+only; medium scrutiny with staff present).
+
+### 5.4 People (two or three, D-25)
 
 Write only after reading their recent posts yourself; one personal line from that reading. No lead showed a paid
 plan in words; Claude Code use implies one (Estimate).
@@ -113,13 +125,14 @@ plan in words; Claude Code use implies one (Estimate).
 | Nate Aune, Nerdy Parents Club | Builds games with "Claude Code and Godot"; son 11; kit "designed for Claude Code" | Reply to the newsletter (same message as route 5) |
 | Daniel Bower | July 2026 post: building a game with his 8-year-old in Claude Code | No invited contact found; skip unless one appears |
 | Necati Demir | Nov 2025 post: his 8-year-old built 30 games with Claude Code | Email on his contact page, framed for professional enquiries: one short note at most |
+| Khe Hy, RadReads newsletter | March 2026 post about paying his 11-year-old daughter to learn Claude, with her own login (Researched, Gemini only; confirm before writing) | Newsletter reply or the contact form on his site |
 
 Checked and dropped: Lars Moelleken (uses Google AI Studio, not Claude), "Mei Park" (wrong name; Diana Park's kid is
 3), "Aidan Marcus" (blog real, surname and contact unconfirmed), Sergej Epp (LinkedIn only, teens), Peter Yang and
 Maryrose Cook (kids about 7, no contact route; Yang's audience is product people), Felix Rieseberg (Anthropic
 employee; the "parents send videos" quote unverified; no cold message).
 
-### 5.4 Skip
+### 5.5 Skip
 
 - **Show HN:** the rules require something people can try, not a landing page (Verified); the browser demo is a
   mockup, and an HN thread about a teen's suspended Claude account shows the age issue dominating (Verified, Codex).
@@ -168,8 +181,8 @@ welcome, especially from Mac users".
 | When | Work | Owner hours |
 |---|---|---|
 | Week 0 | Phase 0 (Claude builds P-1 to P-6; owner does P-7 to P-9, the GIF recording and screenshots) | 2–3 |
-| Week 1 | Listings 1–3 | 1–2 |
-| Week 2 | r/ClaudeCode showcase; Nerdy Parents Club; one person | 2 |
+| Week 1 | Listings 1–3; the dev.to write-up | 3 |
+| Week 2 | r/ClaudeCode showcase; Nerdy Parents Club; r/SideProject; one person | 2 |
 | Week 3 | Optional r/ClaudeAI; one more person; fix what testers hit | 2–3 |
 | Week 4 | Review the numbers; keep, change or stop | 0.5 |
 
