@@ -50,9 +50,9 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
 - [>] ST-6 Phase 0: repo ready for outreach (P-1 to P-6, P-11, D-36, D-37) · est 20m · est 3.2% · started 2026-11-05 13:44 · owner go-ahead 2026-11-05 13:44
   - [x] Builder brief
   - [x] Build live: hackathon removal, README, Mac badge, limitations, audit trim, forms, manifest
-  - [ ] Review round 1
-  - [ ] Checks
-  - [ ] Your yes on the README and user-visible wording (before → after)
+  - [x] Review round 1 (Opus reviewer: 9 minor, fixed in 6531b31)
+  - [x] Checks: typecheck, guard tests, build, plugin validate --strict
+  - [!] Your yes on the wording · needs you: read .tmp/phase0/wording.md, say yes
   - [ ] Merge, tag and release v0.1.2
 - [>] ST-7 Your clicks: repo settings (P-7), profile (P-8), video sound (P-10) · started 2026-11-05 13:40
   - [x] P-8 Profile: picture, website link, pin (checked 2026-11-05)

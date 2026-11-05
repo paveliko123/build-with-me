@@ -69,3 +69,5 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
   Built in Phase 0 with P-2.
 - **Owner yes 2026-11-05 on the whole visibility plan** (`docs/plan/visibility-plan.md`); Phase 0 is ST-6.
 - P-10 done 2026-11-05: owner listened; the video has one AI voiceover and no kids' voices. P-8 checked done the same day.
+- A-10 Phase 0 README uses the YouTube thumbnail in place of the GIF until the GIF exists; "See it" screenshots and the sample report wait for the assets step.
+- A-11 The shipped build in app/dist stays the 0.1.2 build: an unread note in server/journey/ideaLibrary.json keeps its old devpost/ path rather than rebuilding for it.
