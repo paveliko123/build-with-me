@@ -1,0 +1,19 @@
+name: Idea
+description: Suggest something that would make Build With Me better
+title: "[Idea]: "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What would you like Build With Me to do?
+    validations:
+      required: true
+  - type: textarea
+    id: who
+    attributes:
+      label: Who would it help?
+      description: For example, younger kids, teens, or parents.
+    validations:
+      required: false
