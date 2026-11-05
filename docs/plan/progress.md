@@ -47,7 +47,13 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Review round 1 to Review round 3
   - [x] Owner cards D-24 to D-37
   - [x] Your yes
-- [>] ST-6 Phase 0: repo ready for outreach (P-1 to P-6, P-11, D-36, D-37) · est 20m · est 3.2% · started 2026-11-05 13:44 · owner go-ahead 2026-11-05 13:44  - [x] Builder brief  - [ ] Build live: hackathon removal, README, Mac badge, limitations, audit trim, forms, manifest  - [ ] Review round 1  - [ ] Checks  - [ ] Your yes on the README and user-visible wording (before → after)  - [ ] Merge, tag and release v0.1.2
+- [>] ST-6 Phase 0: repo ready for outreach (P-1 to P-6, P-11, D-36, D-37) · est 20m · est 3.2% · started 2026-11-05 13:44 · owner go-ahead 2026-11-05 13:44
+  - [x] Builder brief
+  - [ ] Build live: hackathon removal, README, Mac badge, limitations, audit trim, forms, manifest
+  - [ ] Review round 1
+  - [ ] Checks
+  - [ ] Your yes on the README and user-visible wording (before → after)
+  - [ ] Merge, tag and release v0.1.2
 - [>] ST-7 Your clicks: repo settings (P-7), profile (P-8), video sound (P-10) · started 2026-11-05 13:40
   - [x] P-8 Profile: picture, website link, pin (checked 2026-11-05)
   - [x] P-10 Video sound: one AI voiceover, no kids (owner 2026-11-05)
