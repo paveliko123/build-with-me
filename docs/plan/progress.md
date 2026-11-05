@@ -30,7 +30,7 @@ A phase may say how its work is split across sessions as free text, for example 
 The plan-progress mod reads this file (the band and `/progress`); keep it current with the work.
 -->
 
-<!-- Released 0.1.2 (ca17c35, owner yes D-22, 2026-10-26). Build record: devpost\checklist.md. D-numbers in this repo are its own (D-1 to D-24; D-24 2026-11-05: judging over, freeze lifted), not the setup's. -->
+<!-- Released 0.1.2 (ca17c35, owner yes D-22, 2026-10-26). Build record: docs\design\checklist.md. D-numbers in this repo are its own (D-1 to D-24; D-24 2026-11-05: judging over, freeze lifted), not the setup's. -->
 
 ## Judging · the GitHub repo stays as submitted
 - [x] ST-1 Lift the GitHub freeze after judging · 2026-10-26 → 2026-11-05 · owner yes 2026-11-05 (D-24: judging over)
@@ -47,24 +47,26 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Review round 1 to Review round 3
   - [x] Owner cards D-24 to D-37
   - [x] Your yes
-- [>] ST-6 Phase 0: repo ready for outreach (P-1 to P-6, P-11, D-36, D-37) · est 20m · est 3.2% · started 2026-11-05 13:44 · owner go-ahead 2026-11-05 13:44
+- [x] ST-6 Phase 0: repo ready for outreach (P-1 to P-6, P-11, D-36, D-37) · est 20m · est 3.2% · 2026-11-05 → 2026-11-05 · owner yes 2026-11-05 (wording, merge, release)
   - [x] Builder brief
   - [x] Build live: hackathon removal, README, Mac badge, limitations, audit trim, forms, manifest
   - [x] Review round 1 (Opus reviewer: 9 minor, fixed in 6531b31)
   - [x] Checks: typecheck, guard tests, build, plugin validate --strict
-  - [!] Your yes on the wording · needs you: read .tmp/phase0/wording.md, say yes
-  - [ ] Merge, tag and release v0.1.2
+  - [x] Your yes on the wording
+  - [x] Merge, tag and release v0.1.2 (1f221df)
 - [>] ST-7 Your clicks: repo settings (P-7), profile (P-8), video sound (P-10) · started 2026-11-05 13:40
   - [x] P-8 Profile: picture, website link, pin (checked 2026-11-05)
   - [x] P-10 Video sound: one AI voiceover, no kids (owner 2026-11-05)
   - [x] P-7 Repo website link and six topics (topics set 2026-11-05, owner "set them")
-  - [!] P-7 Social preview image · needs you: upload it (image made in ST-6)
+  - [!] P-7 Social preview image · needs you: upload it (.tmp/phase0/social-preview.png)
+- [ ] ST-8 Assets: README GIF, three screenshots, sample parent report (plan §4, A-10) · needs you: yes to download ScreenToGif
+- [ ] ST-9 Week 1 listings: Anthropic directory, awesome-claude-code, mods4claude, ClaudePluginHub (plan §5.1) · after ST-8
 
 ## Checks of 0.1.2 on the real app
-- [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop <!-- devpost\checklist.md:351, :374, :425 -->
+- [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop <!-- docs\design\checklist.md:351, :374, :425 -->
 
 ## Hardening · open security-audit items
-- [ ] ST-3 Safety review round 2, priority 3: a second secret for the parent cookie, tablet setup as a POST, unlocking in a browser with a kid's pass, a trace on PIN reset, telemetry opt-outs for kids' runs, README disclosures, app emojis checked, starter ideas · released after ST-1 <!-- devpost\security-audit.md:54; devpost\spec.md:406 -->
-- [ ] ST-4 Low and Info hardening · A4, C1, C2, C4, C5b, C7b, C7c, C8, I2, I3, I5, I7, I8 · released after ST-1 <!-- devpost\security-audit.md:55 -->
+- [ ] ST-3 Safety review round 2, priority 3: a second secret for the parent cookie, tablet setup as a POST, unlocking in a browser with a kid's pass, a trace on PIN reset, telemetry opt-outs for kids' runs, README disclosures, app emojis checked, starter ideas · released after ST-1 <!-- docs\design\security-audit.md:54; docs\design\spec.md:406 -->
+- [ ] ST-4 Low and Info hardening · A4, C1, C2, C4, C5b, C7b, C7c, C8, I2, I3, I5, I7, I8 · released after ST-1 <!-- docs\design\security-audit.md:55 -->
 
-<!-- Ideas, not planned: sharing outside the home, a more natural voice, the behind-the-scenes learning session (devpost\prd.md:313-317); email or text alerts, a pause button, per-kid daily budgets (prd.md:319-322); the thumbnail's look (checklist.md:345-347). -->
+<!-- Ideas, not planned: sharing outside the home, a more natural voice, the behind-the-scenes learning session (docs\design\prd.md:313-317); email or text alerts, a pause button, per-kid daily budgets (prd.md:319-322); the thumbnail's look (checklist.md:345-347). -->
