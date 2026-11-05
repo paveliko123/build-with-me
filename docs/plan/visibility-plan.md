@@ -1,6 +1,6 @@
 ---
 doc: visibility-plan
-status: draft, under planning review (round 1 fixes applied)
+status: reviewed (3 rounds), waiting for owner cards D-33, D-34, D-36, D-37 and the owner yes (round 1 fixes applied)
 updated: 2026-11-05
 step: ST-5
 ---
@@ -39,7 +39,7 @@ is checked.
 | P-1 | **Remove the hackathon story (D-32).** Rename `devpost/` to `docs/design/`; update the paths in code comments, README, SECURITY.md and `.gitignore`; drop the demo page's "modified Devpost…" bullet; shorten the README credit to one line under Credits. Make the root `LICENSE` plain MIT so GitHub recognizes it (A-9), with the Devpost notice kept in `app/skills/LICENSE` and the README credit line; keep the course skills themselves and the guide's internal name-mapping lines in `server/journey/prompt/wrapperLayer.ts` (kids never see them). | A search of tracked files outside `app/skills`, `app/dist/skills`, `LICENSE`, `server/journey/prompt/` (incl. the `safety.ts` check pattern, which must stay), `app/dist` (rebuilt from it), `docs/design/` and `docs/plan/` finds no "devpost" or "hackathon" except the README credit line and the comments that credit the course skills (`scripts/stamp-build.mjs:3`, `server/journey/skillsDir.ts:1`); the scripts' own write paths (`scripts/e1-isolation.ts`, `e2-speech.ts`, `idea-page.mjs`, `usage-experiment.ts`) point at `docs/design/`; `npm run typecheck`, `npm run test:guard` and `npm run build` pass (`npm test` doesn't exist). |
 | P-2 | **README first screen (§3).** | At 1366×768 the first screen shows what it is, who it's for, and the GIF and demo link without scrolling (the rest of §3's first-screen list may sit just below). |
 | P-3 | **Mac labeled untested (D-28).** Badge "Windows · Mac untested"; the "What you need" line matches. | Badge and text agree. |
-| P-4 | **Known limitations (D-27, A-3).** SECURITY.md gets a short "Known limitations" list: the open review items in plain terms, in two groups: weaknesses, each with what it actually needs to matter (for example another program on the laptop, or someone on the home network), and how it handles data today (the kids' runs ignore the parent's telemetry opt-outs, the kid's nickname goes to the report writer, prompt files are kept for a week); no step-by-step detail, plus "a hobby project, not professionally audited". It also says the safety check runs in the guide's conversation by default (audit line 54). | The list names every open ST-3 item from `docs/design/security-audit.md` without exploit steps; the 13 Low/Info ST-4 items get one grouped line (A-3 names only ST-3, D-27 says "open items"; default, owner may change). |
+| P-4 | **Known limitations (D-27, A-3).** SECURITY.md gets a short "Known limitations" list: the open review items in plain terms, in two groups: weaknesses, each with what it actually needs to matter (for example another program on the laptop, or someone on the home network), and how it handles data today (the kids' runs ignore the parent's telemetry opt-outs, the kid's nickname goes to the report writer, prompt files unused for a week are removed at the first Claude call after the server restarts); no step-by-step detail, plus "a hobby project, not professionally audited". It also says the safety check runs in the guide's conversation by default (audit line 54). | The list names every open ST-3 item from `docs/design/security-audit.md` without exploit steps; the 13 Low/Info ST-4 items get one grouped line (A-3 names only ST-3, D-27 says "open items"; default, owner may change). |
 | P-5 | **Bug-report form.** `.github/ISSUE_TEMPLATE/bug.yml` with fields: Windows or Mac, Node.js version, Claude plan (Pro, Max, Ultra, Team, Enterprise, other or unsure), what happened, what you expected. Plus a short "idea" form and a `config.yml` that sends security reports to SECURITY.md. | A new issue on GitHub shows both forms and the security link. |
 | P-6 | **Release `v0.1.2` (D-27).** After P-1 to P-5 and P-11 are merged, tag the Phase 0 merge commit (not `ca17c35`, the 0.1.2 build) with short notes: what it does, how to install, link to the limitations list. The version number stays 0.1.2, so installed copies don't receive Phase 0 changes. | The Releases page shows v0.1.2 and the notes' limitations link works. |
 | P-7 | **Repo settings (owner clicks).** Website: set (new demo URL). Topics: `claude-code`, `claude-code-plugin`, `kids-coding`, `parents`, `local-first`, `plan-first`. Social preview image: 1280×640 from the video's closing card. | The repo page shows the link and topics; a shared link shows the picture. |
@@ -107,7 +107,7 @@ Ranked by expected value per hour, lowest scrutiny first. Sources: three indepen
 
 4. **A dev.to post**, "How my kids plan and build small apps with Claude Code, and the plugin I made for it"
    (A-2: the write-up stays; no LinkedIn). Open publishing, new accounts can post, a friendly developer culture with
-   many developer parents (Researched, Gemini). About 2–3 hours once; it gives every later post and message a link
+   many developer parents (Researched, Gemini). About 2.5 hours once (capped, §7); it gives every later post and message a link
    with more depth than the README.
 
 ### 5.3 Communities (one post each, after the listings)
@@ -241,3 +241,6 @@ Bio (160 characters max), as set: "Parent and hobby builder. I make small open-s
 
 - 2026-11-05: first draft from the owner's interview (D-24 to D-32) and three research runs.
 - 2026-11-05: review round 1 fixes: repo rename; people moved to a local-only file; P-10, P-11 added; P-1, P-2, P-4 to P-8 corrected; unsourced tool names dropped.
+- 2026-11-05: planning review, 3 rounds (round 1 Sonnet + Codex Luna as the D-31 trial, flag checker; round 2
+  Sonnet + Codex Sol change check; round 3 Codex Sol change check). Fixes: privacy (people list moved to a local file,
+  P-10 video sound check), Anthropic directory steps (P-11), P-1 checks, P-4 data-handling wording, schedule.

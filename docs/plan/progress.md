@@ -43,7 +43,7 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Interview (D-24 to D-29)
   - [x] Check the Devpost video (A-5)
   - [ ] Research people and places: Claude, Codex Terra, Gemini Flash (D-30)
-  - [ ] Draft the revised plan
+  - [x] Draft the revised plan
   - [ ] Review round 1 to Review round 3
   - [ ] Your yes
 
