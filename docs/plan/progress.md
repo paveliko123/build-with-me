@@ -72,8 +72,8 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
 - [>] ST-9 Week 1 listings: Anthropic directory, awesome-claude-code, mods4claude, ClaudePluginHub (plan §5.1) · est 12m · est 3.1% · started 2026-11-05 15:50 · drafts: docs/plan/listings-week1.md
   - [x] Draft: four entries
   - [x] Card D-39: under-18 answer No (owner 2026-11-05)
-  - [!] Your yes on the drafts · needs you: yes
-  - [ ] Your submits: awesome-claude-code, mods4claude, ClaudePluginHub
+  - [x] awesome-claude-code submitted: issue hesreallyhim/awesome-claude-code#3491 (owner 2026-11-05)
+  - [ ] Your submits: mods4claude, ClaudePluginHub
   - [x] Your Validate: sizes OK; icon added (A-12)
   - [x] Anthropic directory submitted (owner 2026-11-05); held for security scan and policy review
   - [ ] Anthropic review result · resumes: check Submissions in a few days
