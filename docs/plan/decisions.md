@@ -22,3 +22,7 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
 - **D-28 Mac labeled untested; no separate clean-machine test (owner yes 2026-11-05, option A).** Badge
   "Windows · Mac untested", README text to match, the bug-report form asks for the OS. The 2026-10-23 install-video
   reinstall counts as the fresh-install check (Node.js was already present).
+- **D-29 The kids' real apps may be shown (owner yes 2026-11-05, option B: "any/all of the built apps are ok to
+  share").** No kids' names, faces or voices; no local club session.
+- A-4 Before an app is shown, its words and pictures are checked for a kid's name, school or other personal detail.
+- A-5 No demo video unless the owner sends its link; the GIF and screenshots carry the posts.

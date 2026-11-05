@@ -40,7 +40,8 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
 ## Visibility · GitHub stars and real families
 - [>] ST-5 Visibility plan · started 2026-11-05 11:41 · draft: Downloads\build-with-me-visibility-plan.md
   - [x] Evaluate the draft against the repo
-  - [!] Interview · needs you: answer the interview cards
+  - [x] Interview (D-24 to D-29)
+  - [ ] Fact-check the outreach names and routes
   - [ ] Draft the revised plan
   - [ ] Review round 1
   - [ ] Your yes
