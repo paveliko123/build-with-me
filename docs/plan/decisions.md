@@ -55,3 +55,6 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
 - A-8 SECURITY.md's known limitations list the eight ST-3 items one by one and the 13 low ST-4 items as one grouped line.
 - A-9 The root `LICENSE` becomes plain MIT so GitHub shows "MIT"; Devpost's MIT notice stays in `app/skills/LICENSE`
   (next to the course skills it covers) and in the README credit line, which keeps D-32's credit.
+- **D-33 Add one line to the README's 18+ note and the FAQ (owner yes 2026-11-05, option A):** "Anthropic may restrict
+  accounts that show signs of use by someone under 18." Posts unchanged; Anthropic not asked first. Owner addition:
+  all outreach is framed as "me helping my own kids"; each parent decides with their own evaluation and risk assessment.

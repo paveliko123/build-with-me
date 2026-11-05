@@ -55,7 +55,7 @@ before → after at build time.
 
 **New first screen, in order:** icon, title and badges (Mac badge per P-3) → the current one-line description
 (it already follows D-26) → the "nothing is sent to the developer" line → a 15–25 s GIF → "Try the 2-minute demo"
-and "Watch the 2½-minute walkthrough" (the video, A-5) → the 18+ note, unchanged unless card D-33 (§9) adds a line.
+and "Watch the 2½-minute walkthrough" (the video, A-5) → the 18+ note plus the D-33 line (§9).
 
 **New sections:**
 - **See it:** three screenshots: a kid's step screen, the *My apps* shelf with real apps (D-29, A-4), the top of a
@@ -93,7 +93,7 @@ Ranked by expected value per hour, lowest scrutiny first. Sources: three indepen
    (Verified: https://code.claude.com/docs/en/plugins/publish.md); the community marketplace repo
    (https://github.com/anthropics/claude-plugins-community) describes a security scan before approval (Verified).
    If approved, people can install through Anthropic's marketplace; check the real install command after approval.
-   Submit after Phase 0 (P-11). It may be refused over the 18+ rule (Estimate); see D-33 on whether to ask first.
+   Submit after Phase 0 (P-11). It may be refused over the 18+ rule (Estimate); D-33: not asked first.
 2. **awesome-claude-code** (https://github.com/hesreallyhim/awesome-claude-code, ~57k stars). Rules: web issue form
    filed by a person, repo at least 14 days old with commits after day one or 100+ stars, one plain line with no
    emoji, not addressed to the reader (Verified). The repo qualifies (created 2026-10-07). Its guide says a project
@@ -145,6 +145,8 @@ The people table, each person's evidence and route, and the "checked and dropped
 
 ## 6. Messages
 
+- Frame every message and post as "me helping my own kids"; each parent decides for their own family, with their
+  own evaluation and risk assessment (D-33). Never a recommendation that other parents do it.
 - Under 120 words, one ask, feedback not promotion. Plain words; describe what a kid and a parent see.
 - Only claims the README supports; no "kid-safe" (D-26). Real links only: repo, demo, video, sample report.
 - Communities: one follow-up reply after 7 days at most. People: one message each, no follow-up (§5.4).
@@ -159,7 +161,7 @@ Hi <name>,
 
 I read <specific post>: <one honest sentence about what stuck with you>.
 
-I built a free, open-source Claude Code plugin for parents doing the same thing at home.
+I made a free, open-source Claude Code plugin for doing this with my own kids at home.
 Your kid talks with a guide through six steps (start, idea, design, plan, build, ship) on your
 laptop or a tablet, under your own Claude plan. Their sessions can't touch your files, a
 separate Claude call checks what's said both ways, and you get a report after each app.
@@ -223,11 +225,10 @@ Bio (160 characters max), as set: "Parent and hobby builder. I make small open-s
   age-assurance help page says accounts may be restricted on signs of use by a minor (Verified, Codex:
   https://www.anthropic.com/legal/consumer-terms ;
   https://support.claude.com/en/articles/15171100-age-assurance-on-claude). The README already says letting kids
-  use it is the parent's decision; it doesn't say a parent's account could be restricted. **Card D-33:** add that
-  line to the README's 18+ note and the FAQ, or not. The Reddit outline, the message template and the profile README
-  also say "my kids ... on my account"; the same card decides whether they carry the line, and whether to ask Anthropic
-  before submitting to its directory.
-- **Open cards before build:** D-33 (above), D-34 (skip Show HN, which narrows D-25), D-36 (keep the security audit with its open items public, or trim it) and D-37 (the README heading "How kids are kept safe" against D-26).
+  use it is the parent's decision. **D-33 (owner yes 2026-11-05):** the README's 18+ note and the FAQ get one line,
+  "Anthropic may restrict accounts that show signs of use by someone under 18." Posts stay as they are; Anthropic
+  isn't asked first.
+- **Open cards before build:** D-34 (skip Show HN, which narrows D-25), D-36 (keep the security audit with its open items public, or trim it) and D-37 (the README heading "How kids are kept safe" against D-26).
 - **Small audience:** a paid plan, the Claude Code command-line tool and a terminal. Fine for stars; don't judge
   success by mainstream reach.
 - **Real examples skew younger:** most parents found build with kids of 5–7, not 8–13 (Verified, two researchers).
