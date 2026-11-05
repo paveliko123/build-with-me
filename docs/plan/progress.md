@@ -74,7 +74,8 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Card D-39: under-18 answer No (owner 2026-11-05)
   - [!] Your yes on the drafts · needs you: yes
   - [ ] Your submits: awesome-claude-code, mods4claude, ClaudePluginHub
-  - [ ] Your Validate in the Anthropic portal; size card if it blocks
+  - [x] Your Validate: sizes OK; icon added (A-12)
+  - [!] Re-validate, then submit · needs you: Re-validate at main @ e0dcb8f
   - [ ] Your Anthropic submit
 
 ## Checks of 0.1.2 on the real app

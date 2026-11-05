@@ -75,3 +75,4 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
 - **D-39 Anthropic directory form: answer "No" to "intended for people under 18" (owner yes 2026-11-05, option B).** Owner's
   reason: kids can't install or use it on their own; the parent is the subscriber, like a parent's Netflix account with a
   kids' profile. A note box, if any, says so (docs/plan/listings-week1.md).
+- A-12 Directory listing icon: the existing 512 px app icon copied to .claude-plugin/icon.png (portal Validate 2026-11-05 warned "No icon"; the icon is fixed at first save or submit). Validate showed no size block (281 files, 9 MB, within limits); 20 policy holds are for a reviewer.
