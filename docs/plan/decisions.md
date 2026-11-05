@@ -58,3 +58,6 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
 - **D-33 Add one line to the README's 18+ note and the FAQ (owner yes 2026-11-05, option A):** "Anthropic may restrict
   accounts that show signs of use by someone under 18." Posts unchanged; Anthropic not asked first. Owner addition:
   all outreach is framed as "me helping my own kids"; each parent decides with their own evaluation and risk assessment.
+- **D-34 Skip Show HN for now (owner yes 2026-11-05, option A; narrows D-25).** Revisit after real families have used
+  it; then link the repo, not the mockup demo. Owner's view: the plugin is a structured approach, not free AI use for
+  teens, which should calm objectors; the terms question is what would draw fire.
