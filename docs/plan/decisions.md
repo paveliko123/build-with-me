@@ -68,3 +68,4 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
   2026-11-05, option A; follows D-26).** Section heading and its contents-table link; the `#safety` anchor stays.
   Built in Phase 0 with P-2.
 - **Owner yes 2026-11-05 on the whole visibility plan** (`docs/plan/visibility-plan.md`); Phase 0 is ST-6.
+- P-10 done 2026-11-05: owner listened; the video has one AI voiceover and no kids' voices. P-8 checked done the same day.

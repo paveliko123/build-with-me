@@ -48,7 +48,11 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Owner cards D-24 to D-37
   - [x] Your yes
 - [ ] ST-6 Phase 0: repo ready for outreach (P-1 to P-6, P-11, D-36, D-37) · est 20m · est 3.2% · needs you: go-ahead on the estimate (peak until 2 PM ET)
-- [ ] ST-7 Your clicks: repo settings (P-7), profile picture and website link (P-8), listen to the video (P-10) · needs you: the clicks
+- [>] ST-7 Your clicks: repo settings (P-7), profile (P-8), video sound (P-10) · started 2026-11-05 13:40
+  - [x] P-8 Profile: picture, website link, pin (checked 2026-11-05)
+  - [x] P-10 Video sound: one AI voiceover, no kids (owner 2026-11-05)
+  - [x] P-7 Repo website link
+  - [!] P-7 Topics and social preview image · needs you: topics (or say "set them"), image
 
 ## Checks of 0.1.2 on the real app
 - [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop <!-- devpost\checklist.md:351, :374, :425 -->
