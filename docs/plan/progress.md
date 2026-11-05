@@ -41,9 +41,9 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
 - [>] ST-5 Visibility plan · started 2026-11-05 11:41 · draft: Downloads\build-with-me-visibility-plan.md
   - [x] Evaluate the draft against the repo
   - [x] Interview (D-24 to D-29)
-  - [ ] Fact-check the outreach names and routes
+  - [!] Fact-check the outreach names, routes and the video · needs you: go-ahead on the estimate
   - [ ] Draft the revised plan
-  - [ ] Review round 1
+  - [ ] Review round 1 to Review round 3
   - [ ] Your yes
 
 ## Checks of 0.1.2 on the real app

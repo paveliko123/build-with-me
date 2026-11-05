@@ -25,4 +25,5 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
 - **D-29 The kids' real apps may be shown (owner yes 2026-11-05, option B: "any/all of the built apps are ok to
   share").** No kids' names, faces or voices; no local club session.
 - A-4 Before an app is shown, its words and pictures are checked for a kid's name, school or other personal detail.
-- A-5 No demo video unless the owner sends its link; the GIF and screenshots carry the posts.
+- A-5 The Devpost video (https://youtu.be/DFgWYG4G0kE, link from the owner 2026-11-05) is checked during the
+  fact-check; it's used as the plan's video only if it shows the full flow, otherwise the GIF and screenshots carry the posts.
