@@ -82,6 +82,7 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
 - [>] ST-11 Week 2: Nerdy Parents Club email, dev.to write-up (plan §5.2, §5.3) · started 2026-11-05 · drafts: docs/plan/outreach-week2.md
   - [x] Draft: club email
   - [!] Your yes and send: club email · needs you: yes, then send from Gmail
+  - [x] Fit check of remaining venues and people (2026-11-05)
   - [ ] Draft: dev.to post
   - [ ] Your yes and publish: dev.to post
 
