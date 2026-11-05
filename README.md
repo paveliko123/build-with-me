@@ -10,7 +10,9 @@
 
 🏠 **Nothing is ever sent to the developer** of this plugin: no accounts, no sign-ups, no analytics, no tracking.
 
-[![Watch the 2½-minute walkthrough](https://img.youtube.com/vi/DFgWYG4G0kE/maxresdefault.jpg)](https://youtu.be/DFgWYG4G0kE)
+### 🎬 [Watch the 2½-minute walkthrough](https://youtu.be/DFgWYG4G0kE)
+
+<a href="https://youtu.be/DFgWYG4G0kE"><img src="docs/images/video-thumbnail.jpg" alt="Watch the 2½-minute walkthrough on YouTube" width="640"></a>
 
 ### ▶️ [Try the 2-minute demo](https://paveliko123.github.io/build-with-me/)
 About two minutes of mock screens in your browser. Nothing to install.
