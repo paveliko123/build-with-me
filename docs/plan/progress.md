@@ -41,7 +41,8 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
 - [>] ST-5 Visibility plan · started 2026-11-05 11:41 · draft: Downloads\build-with-me-visibility-plan.md
   - [x] Evaluate the draft against the repo
   - [x] Interview (D-24 to D-29)
-  - [!] Fact-check the outreach names, routes and the video · needs you: go-ahead on the estimate
+  - [x] Check the Devpost video (A-5)
+  - [ ] Research people and places: Claude, Codex Terra, Gemini Flash (D-30)
   - [ ] Draft the revised plan
   - [ ] Review round 1 to Review round 3
   - [ ] Your yes

@@ -38,3 +38,7 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
   smallest Codex model"; the rule itself stays. Later rounds use the usual models.
 - Owner wish 2026-11-05: strip the hackathon story (how and why it was built) from the repo where possible. Scope is
   card D-32. The MIT credit to Devpost's course skills stays (the license requires it).
+- **D-32 Rename `devpost/` to `docs/design/` and remove the hackathon wording visitors see (owner yes 2026-11-05,
+  option A).** README, demo page, SECURITY.md and code-comment paths; the required credit becomes one short line under
+  Credits; the guide's internal name-mapping lines stay. Built with the README rewrite, in one pass.
+- Owner yes 2026-11-05: start the rewrite now, at the ~12% job-total estimate, in peak hours.
