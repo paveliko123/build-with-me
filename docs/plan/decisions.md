@@ -80,3 +80,4 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
 - A-14 Directory "Listed on": Claude Code only; Cowork and the Claude apps unticked (it runs a local server for the home network; tested only in Claude Code).
 - D-40 Compliance box 3 (no credential exfiltration, no code outside declared MCP servers): owner ticked all four boxes and went on, 2026-11-05 (option A: the plugin's own disclosed server is not hidden code; the 14 credential findings are keyword matches in comments, docs and an error pattern).
 - A-15 Directory updates: "Scheduled check only" (about every 6 hours); no webhook secret in the repo settings. Can add push later.
+- **D-41 Nerdy Parents Club: send a soft share, no project-wall ask (owner yes 2026-11-05, option B).** The wall and newsletter feature members who attend meetings; the owner's draft was ready, so no harm in sending a note that asks nothing.

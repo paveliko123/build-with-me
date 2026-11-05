@@ -6,11 +6,11 @@ Researched 2026-11-05: the newsletter (buttondown.com/nerdyparentsclub) asks mem
 project wall" (https://www.nerdyparentsclub.org/projects), but the wall shows no public form; adding seems to need a
 member login. The site's only contact is nerdyparentsclub@gmail.com. Organizer signs the newsletter as Wendy.
 
-Route: the owner sends this email from their own Gmail. No names of anyone's kids (plan §6).
+Route (D-41, option B: a soft share, no project-wall ask): the owner sends this email from their own Gmail. No names of anyone's kids (plan §6).
 
 ```text
 To: nerdyparentsclub@gmail.com
-Subject: A Claude Code plugin for kids' building sessions at home
+Subject: Sharing a Claude Code plugin for building with kids at home
 
 Hi Wendy,
 
@@ -22,7 +22,7 @@ under my own Claude plan. Their sessions can't touch my files, a separate Claude
 what's said both ways, and I get a report after each app. Whether it fits another family is each
 parent's call.
 
-Could it go on the project wall? If anyone tries it, blunt feedback is welcome.
+Sharing in case it's useful to any members; no reply needed. If anyone tries it, blunt feedback is welcome.
 
 2½-minute walkthrough: https://youtu.be/DFgWYG4G0kE
 Browser demo: https://paveliko123.github.io/build-with-me/
