@@ -30,12 +30,12 @@ A phase may say how its work is split across sessions as free text, for example 
 The plan-progress mod reads this file (the band and `/progress`); keep it current with the work.
 -->
 
-<!-- Released 0.1.2 (ca17c35, owner yes D-22, 2026-10-26). Build record: devpost\checklist.md. D-numbers in this repo are its own (D-1 to D-23), not the setup's. -->
+<!-- Released 0.1.2 (ca17c35, owner yes D-22, 2026-10-26). Build record: devpost\checklist.md. D-numbers in this repo are its own (D-1 to D-24; D-24 2026-11-05: judging over, freeze lifted), not the setup's. -->
 
 ## Judging · the GitHub repo stays as submitted
-- [!] ST-1 Lift the GitHub freeze after judging · blocked: hackathon judging · needs you: say judging is over
-  - [ ] Identity hook back, deny rules and the freeze section removed
-  - [ ] Local branch pushed and merged <!-- C:\APPS\LearnAIBasics-Local\.claude\CLAUDE.md (freeze, owner yes 2026-10-26, D-23); its pre-push hook -->
+- [x] ST-1 Lift the GitHub freeze after judging · 2026-10-26 → 2026-11-05 · owner yes 2026-11-05 (D-24: judging over)
+  - [x] Identity hook back, deny rules and the freeze section removed
+  - [x] Local branch pushed and merged <!-- C:\APPS\LearnAIBasics-Local\.claude\CLAUDE.md (freeze, owner yes 2026-10-26, D-23); its pre-push hook -->
 
 ## Visibility · GitHub stars and real families
 - [>] ST-5 Visibility plan · started 2026-11-05 11:41 · draft: Downloads\build-with-me-visibility-plan.md
