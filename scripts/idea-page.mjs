@@ -1,4 +1,4 @@
-// Writes devpost/idea-library.html (self-contained, data inside) from the app's idea library
+// Writes docs/design/idea-library.html (self-contained, data inside) from the app's idea library
 // (server/journey/ideaLibrary.json). Run: npm run ideas:page
 import { readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -103,5 +103,5 @@ render();
 </body>
 </html>
 `;
-writeFileSync(`${ROOT}/devpost/idea-library.html`, html);
-console.log('written devpost/idea-library.html', lib.ideas.length, 'ideas');
+writeFileSync(`${ROOT}/docs/design/idea-library.html`, html);
+console.log('written docs/design/idea-library.html', lib.ideas.length, 'ideas');

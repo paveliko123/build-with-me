@@ -1,5 +1,5 @@
 // "💡 Show me ideas" (family trial: kids got stuck and lost interest). Ideas come straight from the
-// idea library (ideaLibrary.json, browsable in devpost/idea-library.html): no Claude call, so
+// idea library (ideaLibrary.json, browsable in docs/design/idea-library.html): no Claude call, so
 // they appear at once. Matched to the age group, and mostly to the mood of the kid's theme, with
 // one from elsewhere for variety. Picking one starts the customizing (guideTurn.ts).
 

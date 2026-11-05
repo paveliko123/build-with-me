@@ -6,7 +6,7 @@
 // Each run: Start → Idea → Design → Tech plan with the same canned answers (one naughty, one
 // personal), one full build, one change round and the edit build. Every run starts with a cold
 // cache. Spends a real share of the 5-hour limit (about 5–10% per run).
-// Results: tmp/e3-results.json (kept between runs) and devpost/usage-experiment.html.
+// Results: tmp/e3-results.json (kept between runs) and docs/design/usage-experiment.html.
 // Run: npm run e3            (all three)   npm run e3 -- B   (one mix)   npm run e3 -- --page (page only)
 
 import { existsSync, mkdtempSync, readFileSync, writeFileSync, mkdirSync, rmSync, readdirSync } from 'node:fs';
@@ -20,7 +20,7 @@ process.env.BWM_PLUGIN_DATA = join(FAMILY, '.plugin-data');
 const PORT = 4795;
 const base = `http://127.0.0.1:${PORT}`;
 const RESULTS = 'tmp/e3-results.json';
-const PAGE = 'devpost/usage-experiment.html';
+const PAGE = 'docs/design/usage-experiment.html';
 
 type MixId = 'A' | 'B' | 'C';
 interface Call { label: string; model: string; input: number; output: number; cacheRead: number; cacheWrite: number; cacheWrite1h: number; cost: number; ms: number; at: number }

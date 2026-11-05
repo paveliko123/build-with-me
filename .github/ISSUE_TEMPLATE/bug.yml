@@ -1,0 +1,53 @@
+name: Bug report
+description: Something didn't work as expected
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. Please don't include your kids' names, conversations or any personal details.
+        For a security problem, don't open an issue: see the Security link on the previous page.
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - Mac
+    validations:
+      required: true
+  - type: input
+    id: node
+    attributes:
+      label: Node.js version
+      description: "Run `node --version` in a terminal. Example: v22.11.0"
+      placeholder: v22.11.0
+    validations:
+      required: true
+  - type: dropdown
+    id: plan
+    attributes:
+      label: Claude plan
+      options:
+        - Pro
+        - Max
+        - Ultra
+        - Team
+        - Enterprise
+        - Other or unsure
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: What did you do, and what did you see?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true

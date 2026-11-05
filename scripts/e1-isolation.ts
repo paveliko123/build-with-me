@@ -1,5 +1,5 @@
 // E1: prove the app can drive the parent's own Claude Code, sealed off from the parent's
-// setup. Writes devpost/e1-results.md. Run: npm run e1
+// setup. Writes docs/design/e1-results.md. Run: npm run e1
 // The Claude CLI must be installed and signed in (claude → /login).
 
 import { existsSync, readFileSync, writeFileSync, unlinkSync, mkdirSync } from 'node:fs';
@@ -139,8 +139,8 @@ ${checks.map((c) => `| ${c.pass ? '✅' : '❌'} | ${c.name} | ${c.detail.replac
 ${after ? after.raw.split(/\r?\n/).filter((l) => /^\s*Current /.test(l)).join('\n') : '(not run)'}
 \`\`\`
 `;
-  writeFileSync('devpost/e1-results.md', md, 'utf8');
-  console.log(`\n${passed}/${checks.length} passed; critical ${criticalOk ? 'PASS' : 'FAIL'} → devpost/e1-results.md`);
+  writeFileSync('docs/design/e1-results.md', md, 'utf8');
+  console.log(`\n${passed}/${checks.length} passed; critical ${criticalOk ? 'PASS' : 'FAIL'} → docs/design/e1-results.md`);
   process.exitCode = criticalOk ? 0 : 1;
 }
 

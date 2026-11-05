@@ -1,4 +1,4 @@
-// E2 (mechanical part): certificates + local speech-to-text. Writes devpost/e2-results.md.
+// E2 (mechanical part): certificates + local speech-to-text. Writes docs/design/e2-results.md.
 // The tablet part is a hands-on learner check (setup-tablet + talk-test on a real tablet).
 // Run: npm run e2
 
@@ -116,7 +116,7 @@ async function main() {
   } finally {
     await server.close();
     const passed = checks.filter((c) => c.pass).length;
-    writeFileSync('devpost/e2-results.md', `# E2 results: local speech and the home certificate
+    writeFileSync('docs/design/e2-results.md', `# E2 results: local speech and the home certificate
 
 Run on ${new Date().toISOString().slice(0, 16).replace('T', ' ')} · **${passed}/${checks.length} mechanical checks passed**
 
@@ -134,7 +134,7 @@ ${checks.map((c) => `| ${c.pass ? '✅' : '❌'} | ${c.name} | ${c.detail.replac
 
 _To be filled in after trying it on the tablet._
 `, 'utf8');
-    console.log(`\n${passed}/${checks.length} passed → devpost/e2-results.md`);
+    console.log(`\n${passed}/${checks.length} passed → docs/design/e2-results.md`);
     process.exitCode = passed === checks.length ? 0 : 1;
   }
 }

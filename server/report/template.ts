@@ -1,5 +1,5 @@
 // One parent report as a self-contained HTML file (spec.md > Reporter and Reports), laid out
-// like devpost/report-mockup.html ("One report"). No outside files: it opens from the Reports
+// like docs/design/report-mockup.html ("One report"). No outside files: it opens from the Reports
 // folder even when Build With Me isn't running (only the app link needs it running).
 
 import { usageInfo, type ReportData } from './reporter.js';
