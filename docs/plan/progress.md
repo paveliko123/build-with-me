@@ -45,7 +45,7 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Research people and places: Claude, Codex Terra, Gemini Flash (D-30)
   - [x] Draft the revised plan
   - [x] Review round 1 to Review round 3
-  - [!] Cards D-36, D-37 · needs you: answer the last two cards
+  - [!] Card D-37 · needs you: answer the last card
   - [ ] Your yes
 
 ## Checks of 0.1.2 on the real app

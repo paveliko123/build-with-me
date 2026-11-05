@@ -61,3 +61,6 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
 - **D-34 Skip Show HN for now (owner yes 2026-11-05, option A; narrows D-25).** Revisit after real families have used
   it; then link the repo, not the mockup demo. Owner's view: the plugin is a structured approach, not free AI use for
   teens, which should calm objectors; the terms question is what would draw fire.
+- **D-36 Trim the audit's open items (owner yes 2026-11-05, option B).** In `docs/design/security-audit.md`, the eight
+  open medium items and the open low items get the same plain wording as SECURITY.md's known limitations: no file,
+  line or step-by-step fix. Fixed items keep their detail. SECURITY.md keeps its link. Built in Phase 0 with P-4.
