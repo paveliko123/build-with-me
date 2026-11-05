@@ -54,11 +54,11 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Checks: typecheck, guard tests, build, plugin validate --strict
   - [x] Your yes on the wording
   - [x] Merge, tag and release v0.1.2 (1f221df)
-- [>] ST-7 Your clicks: repo settings (P-7), profile (P-8), video sound (P-10) · started 2026-11-05 13:40
+- [x] ST-7 Your clicks: repo settings (P-7), profile (P-8), video sound (P-10) · 2026-11-05 → 2026-11-05
   - [x] P-8 Profile: picture, website link, pin (checked 2026-11-05)
   - [x] P-10 Video sound: one AI voiceover, no kids (owner 2026-11-05)
   - [x] P-7 Repo website link and six topics (topics set 2026-11-05, owner "set them")
-  - [!] P-7 Social preview image · needs you: upload it (.tmp/phase0/social-preview.png)
+  - [x] P-7 Social preview image (owner uploaded 2026-11-05; checked)
 - [x] ST-8 Assets: screenshots and sample parent report (plan §4, D-38) · 2026-11-05 → 2026-11-05 · owner yes 2026-11-05 (publish)
   - [x] Sample report: rename and trim the Coloring Book report
   - [x] Screenshots of finished apps, checked for personal details
