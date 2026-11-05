@@ -65,10 +65,10 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] README See it section
   - [x] Your yes on the changed lines
   - [x] Publish
-- [>] ST-10 App GIFs for See it, and a Unicorn picture that shows the unicorn (owner ask 2026-11-05) · est 25m · est 2.9% · started 2026-11-05 15:05
-  - [ ] Build live: unicorn picture, three app GIFs
-  - [ ] Check each for personal details and size
-  - [ ] README swap and publish
+- [x] ST-10 App GIFs for See it: coloring book, piano, knock-knock (owner ask 2026-11-05; knock-knock replaced the unicorn) · est 25m · est 2.9% · 2026-11-05 → 2026-11-05
+  - [x] Build live: three app GIFs
+  - [x] Check each for personal details and size
+  - [x] README swap and publish
 - [ ] ST-9 Week 1 listings: Anthropic directory, awesome-claude-code, mods4claude, ClaudePluginHub (plan §5.1) · next
 
 ## Checks of 0.1.2 on the real app

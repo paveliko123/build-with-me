@@ -63,8 +63,8 @@ Three apps my own kids made with it, and the top of a parent report. [Read the w
 
 | | |
 |---|---|
-| <img src="site/images/sample-coloring-book.png" alt="My Coloring Book: a shelf of level books to color" width="400"> | <img src="site/images/sample-piano.png" alt="piano: a music staff where you tap to add notes" width="400"> |
-| <img src="site/images/sample-unicorn.png" alt="Unicorn Flip Show: a magic window on a rainbow" width="400"> | <img src="site/images/sample-report-top.png" alt="The top of a parent report" width="400"> |
+| <img src="site/images/sample-coloring-book.gif" alt="My Coloring Book: picking a book from the shelf and coloring the snowman" width="400"> | <img src="site/images/sample-piano.gif" alt="piano: tapping notes onto the staff, then playing them" width="400"> |
+| <img src="site/images/sample-knock-knock.gif" alt="Knock-Knock Card Deck: flipping cards and playing two jokes line by line" width="400"> | <img src="site/images/sample-report-top.png" alt="The top of a parent report" width="400"> |
 
 ---
 
