@@ -33,7 +33,17 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
 <!-- Released 0.1.2 (ca17c35, owner yes D-22, 2026-10-26). Build record: devpost\checklist.md. D-numbers in this repo are its own (D-1 to D-23), not the setup's. -->
 
 ## Judging · the GitHub repo stays as submitted
-- [!] ST-1 GitHub freeze lifted when judging is over: identity hook back, deny rules and the freeze section removed, the local branch pushed and merged · blocked: hackathon judging · needs you: say judging is over <!-- C:\APPS\LearnAIBasics-Local\.claude\CLAUDE.md (freeze, owner yes 2026-10-26, D-23); its pre-push hook -->
+- [!] ST-1 Lift the GitHub freeze after judging · blocked: hackathon judging · needs you: say judging is over
+  - [ ] Identity hook back, deny rules and the freeze section removed
+  - [ ] Local branch pushed and merged <!-- C:\APPS\LearnAIBasics-Local\.claude\CLAUDE.md (freeze, owner yes 2026-10-26, D-23); its pre-push hook -->
+
+## Visibility · GitHub stars and real families
+- [>] ST-5 Visibility plan · started 2026-11-05 11:41 · draft: Downloads\build-with-me-visibility-plan.md
+  - [x] Evaluate the draft against the repo
+  - [!] Interview · needs you: answer the interview cards
+  - [ ] Draft the revised plan
+  - [ ] Review round 1
+  - [ ] Your yes
 
 ## Checks of 0.1.2 on the real app
 - [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop <!-- devpost\checklist.md:351, :374, :425 -->
