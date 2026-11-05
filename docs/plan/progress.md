@@ -59,7 +59,7 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] P-10 Video sound: one AI voiceover, no kids (owner 2026-11-05)
   - [x] P-7 Repo website link and six topics (topics set 2026-11-05, owner "set them")
   - [!] P-7 Social preview image · needs you: upload it (.tmp/phase0/social-preview.png)
-- [ ] ST-8 Assets: README GIF, three screenshots, sample parent report (plan §4, A-10) · needs you: yes to download ScreenToGif
+- [!] ST-8 Assets: README GIF, three screenshots, sample parent report (plan §4, A-10) · needs you: card D-38 (how to make the assets)
 - [ ] ST-9 Week 1 listings: Anthropic directory, awesome-claude-code, mods4claude, ClaudePluginHub (plan §5.1) · after ST-8
 
 ## Checks of 0.1.2 on the real app
