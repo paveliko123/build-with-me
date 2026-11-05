@@ -1,6 +1,6 @@
 ---
 doc: visibility-plan
-status: reviewed (3 rounds), waiting for the owner yes
+status: approved (owner yes 2026-11-05)
 updated: 2026-11-05
 step: ST-5
 ---
@@ -246,3 +246,4 @@ Bio (160 characters max), as set: "Parent and hobby builder. I make small open-s
 - 2026-11-05: planning review, 3 rounds (round 1 Sonnet + Codex Luna as the D-31 trial, flag checker; round 2
   Sonnet + Codex Sol change check; round 3 Codex Sol change check). Fixes: privacy (people list moved to a local file,
   P-10 video sound check), Anthropic directory steps (P-11), P-1 checks, P-4 data-handling wording, schedule.
+- 2026-11-05: owner yes on the whole plan (after D-36 and D-37).

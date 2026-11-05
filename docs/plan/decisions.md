@@ -67,3 +67,4 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
 - **D-37 README heading "🛡️ How kids are kept safe" becomes "🛡️ Safety layers and their limits" (owner yes
   2026-11-05, option A; follows D-26).** Section heading and its contents-table link; the `#safety` anchor stays.
   Built in Phase 0 with P-2.
+- **Owner yes 2026-11-05 on the whole visibility plan** (`docs/plan/visibility-plan.md`); Phase 0 is ST-6.

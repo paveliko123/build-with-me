@@ -38,7 +38,7 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Local branch pushed and merged <!-- C:\APPS\LearnAIBasics-Local\.claude\CLAUDE.md (freeze, owner yes 2026-10-26, D-23); its pre-push hook -->
 
 ## Visibility · GitHub stars and real families
-- [>] ST-5 Visibility plan · started 2026-11-05 11:41 · draft: Downloads\build-with-me-visibility-plan.md
+- [x] ST-5 Visibility plan · 2026-11-05 → 2026-11-05 · owner yes 2026-11-05 · draft: Downloads\build-with-me-visibility-plan.md
   - [x] Evaluate the draft against the repo
   - [x] Interview (D-24 to D-29)
   - [x] Check the Devpost video (A-5)
@@ -46,7 +46,9 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Draft the revised plan
   - [x] Review round 1 to Review round 3
   - [x] Owner cards D-24 to D-37
-  - [!] Your yes · needs you: yes on the whole visibility plan
+  - [x] Your yes
+- [ ] ST-6 Phase 0: repo ready for outreach (P-1 to P-6, P-11, D-36, D-37) · est 20m · est 3.2% · needs you: go-ahead on the estimate (peak until 2 PM ET)
+- [ ] ST-7 Your clicks: repo settings (P-7), profile picture and website link (P-8), listen to the video (P-10) · needs you: the clicks
 
 ## Checks of 0.1.2 on the real app
 - [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop <!-- devpost\checklist.md:351, :374, :425 -->
