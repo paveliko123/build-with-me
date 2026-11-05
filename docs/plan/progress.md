@@ -69,7 +69,12 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Build live: three app GIFs
   - [x] Check each for personal details and size
   - [x] README swap and publish
-- [ ] ST-9 Week 1 listings: Anthropic directory, awesome-claude-code, mods4claude, ClaudePluginHub (plan §5.1) · next
+- [>] ST-9 Week 1 listings: Anthropic directory, awesome-claude-code, mods4claude, ClaudePluginHub (plan §5.1) · est 12m · est 3.1% · started 2026-11-05 15:50 · drafts: docs/plan/listings-week1.md
+  - [x] Draft: four entries
+  - [!] Your yes on the drafts and card D-39 (under-18 answer) · needs you: answer
+  - [ ] Your submits: awesome-claude-code, mods4claude, ClaudePluginHub
+  - [ ] Your Validate in the Anthropic portal; size card if it blocks
+  - [ ] Your Anthropic submit
 
 ## Checks of 0.1.2 on the real app
 - [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop <!-- docs\design\checklist.md:351, :374, :425 -->
