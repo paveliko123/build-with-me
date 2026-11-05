@@ -75,8 +75,8 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [!] Your yes on the drafts · needs you: yes
   - [ ] Your submits: awesome-claude-code, mods4claude, ClaudePluginHub
   - [x] Your Validate: sizes OK; icon added (A-12)
-  - [!] Re-validate, then submit · needs you: Re-validate at main @ e0dcb8f
-  - [ ] Your Anthropic submit
+  - [x] Anthropic directory submitted (owner 2026-11-05); held for security scan and policy review
+  - [ ] Anthropic review result · resumes: check Submissions in a few days
 
 ## Checks of 0.1.2 on the real app
 - [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop <!-- docs\design\checklist.md:351, :374, :425 -->
