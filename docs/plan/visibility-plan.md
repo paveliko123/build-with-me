@@ -122,7 +122,7 @@ plan in words; Claude Code use implies one (Estimate).
 
 | Person | Evidence (Verified unless marked) | Route |
 |---|---|---|
-| Nate Aune, Nerdy Parents Club | Builds games with "Claude Code and Godot"; son 11; kit "designed for Claude Code" | Reply to the newsletter (same message as route 5) |
+| Nate Aune, Nerdy Parents Club | Builds games with "Claude Code and Godot"; son 11; kit "designed for Claude Code" | Reply to the newsletter (same message as route 6) |
 | Daniel Bower | July 2026 post: building a game with his 8-year-old in Claude Code | No invited contact found; skip unless one appears |
 | Necati Demir | Nov 2025 post: his 8-year-old built 30 games with Claude Code | Email on his contact page, framed for professional enquiries: one short note at most |
 | Khe Hy, RadReads newsletter | March 2026 post about paying his 11-year-old daughter to learn Claude, with her own login (Researched, Gemini only; confirm before writing) | Newsletter reply or the contact form on his site |
@@ -136,7 +136,7 @@ employee; the "parents send videos" quote unverified; no cold message).
 
 - **Show HN:** the rules require something people can try, not a landing page (Verified); the browser demo is a
   mockup, and an HN thread about a teen's suspended Claude account shows the age issue dominating (Verified, Codex).
-  High scrutiny. Revisit only after real families have used it.
+  High scrutiny. Revisit only after real families have used it. This narrows D-25, which named Show HN: card D-34.
 - **Product Hunt:** hosted-product audience; a terminal install fits poorly (Estimate).
 - **r/ChatGPTCoding self-promotion thread:** allowed, but a broad audience with no fit evidence (Verified, Codex).
 - **A local club session (D-29):** outside the time budget.
@@ -158,7 +158,7 @@ Hi <name>,
 I read <specific post>: <one honest sentence about what stuck with you>.
 
 I built a free, open-source Claude Code plugin for parents doing the same thing at home.
-Your kid talks with a guide through six steps (idea, design, plan, build, ship) on your
+Your kid talks with a guide through six steps (start, idea, design, plan, build, ship) on your
 laptop or a tablet, under your own Claude plan. Their sessions can't touch your files, a
 separate Claude call checks what's said both ways, and you get a report after each app.
 
@@ -180,7 +180,7 @@ welcome, especially from Mac users".
 
 | When | Work | Owner hours |
 |---|---|---|
-| Week 0 | Phase 0 (Claude builds P-1 to P-6; owner does P-7 to P-9, the GIF recording and screenshots) | 2–3 |
+| Week 0 | Phase 0 (Claude builds P-1 to P-6; owner does P-7 and P-8, P-9 is done; the GIF recording and screenshots) | 2–3 |
 | Week 1 | Listings 1–3; the dev.to write-up | 3 |
 | Week 2 | r/ClaudeCode showcase; Nerdy Parents Club; r/SideProject; one person | 2 |
 | Week 3 | Optional r/ClaudeAI; one more person; fix what testers hit | 2–3 |
