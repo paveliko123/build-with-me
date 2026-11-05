@@ -29,3 +29,12 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
   plan's video as it is: 2:33 long, checked frame by frame 2026-11-05 (sound not checked). It shows the whole flow:
   pass, six steps, build, ship, parent home, report. No recut; the README links it. One slide (0:11) mentions the
   hackathon, which is fine as background.
+- **D-30 Three independent researchers (owner instruction 2026-11-05):** the Claude researcher, Codex Terra
+  (`gpt-6.1-terra`, live web search) and Gemini 3.8 Flash (`gemini-3.8-flash-high` through Antigravity's `agy`). The
+  brief focuses on (1) bloggers and vloggers who clearly use a paid Claude plan and have kids of about 8–13, and
+  (2) places to post that bring real interest without heavy scrutiny; few places, each worth the time.
+- **D-31 Review round 1 on smaller models, as a trial (owner instruction 2026-11-05):** the Claude reviewer on Sonnet
+  and Codex on Luna (`gpt-6-luna`), to see whether it saves usage. A one-off trial against the profile's "never the
+  smallest Codex model"; the rule itself stays. Later rounds use the usual models.
+- Owner wish 2026-11-05: strip the hackathon story (how and why it was built) from the repo where possible. Scope is
+  card D-32. The MIT credit to Devpost's course skills stays (the license requires it).
