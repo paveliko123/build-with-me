@@ -23,7 +23,8 @@ on claude.ai). The listing text is read from `plugin.json` and the README, so th
   developer; no analytics.
 - How long data is kept: until the parent deletes it. Prompt files are removed after a week unused. The README's
   Uninstalling section removes everything.
-- Intended for people under 18: **see card D-39.**
+- Intended for people under 18: **No** (D-39). If there is a note box: "The user is the parent. Only a parent can
+  install it, and kids use it only with a timed pass the parent gives, on the parent's own account, under supervision."
 - Privacy link, if asked: `https://github.com/paveliko123/build-with-me#privacy`
 
 "Compliance": confirm the contact email (paveliko@gmail.com) and read the four acknowledgements before ticking.

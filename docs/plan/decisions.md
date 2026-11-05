@@ -72,3 +72,6 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
 - A-10 Phase 0 README uses the YouTube thumbnail in place of the GIF until the GIF exists; "See it" screenshots and the sample report wait for the assets step.
 - A-11 The shipped build in app/dist stays the 0.1.2 build: an unread note in server/journey/ideaLibrary.json keeps its old devpost/ path rather than rebuilding for it.
 - **D-38 Sample report = the real "My Coloring Book" report, renamed and trimmed (owner yes 2026-11-05, option A).** Kid renamed to a made-up name; full conversation removed; the "calms them down" lines and the "worth a chat" note reworded neutrally; the masked school flag kept; a top line says "Real report, names changed and shortened." Owner sees every changed line before it goes public. No GIF (video thumbnail stays). Screenshots of finished apps go ahead.
+- **D-39 Anthropic directory form: answer "No" to "intended for people under 18" (owner yes 2026-11-05, option B).** Owner's
+  reason: kids can't install or use it on their own; the parent is the subscriber, like a parent's Netflix account with a
+  kids' profile. A note box, if any, says so (docs/plan/listings-week1.md).
