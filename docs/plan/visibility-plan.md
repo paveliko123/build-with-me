@@ -21,7 +21,7 @@ project's context. Decisions D-24 to D-32 and assumptions A-1 to A-5 are in `doc
   separate Claude call checks messages both ways, and you get a report after every app. Understate; let people be
   pleasantly surprised.
 - **Version (D-27):** launch 0.1.2 as it is, tagged `v0.1.2`. Open safety items are listed as known limitations.
-- **Not used:** LinkedIn (A-2 overturned: the owner's LinkedIn is biopharma-focused), paid promotion, Product Hunt.
+- **Not used:** LinkedIn (A-2 overturned, owner's choice), paid promotion, Product Hunt.
 - **Where it stands today (checked 2026-11-05):** 1 star, 0 forks, repo created 2026-10-07 with commits since.
   The repo has an About description but no website link, no topics, no releases and no issue forms. The owner's
   GitHub profile is empty (no name, bio, picture or profile README).
