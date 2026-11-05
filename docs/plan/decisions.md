@@ -18,7 +18,7 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
 - **D-27 Launch 0.1.2 as it is, tagged `v0.1.2`; open items listed as known limitations (owner yes 2026-11-05, option B).**
   No audit work before launch. Owner's reason: a free hobby plugin, not meant to be perfect.
 - A-3 SECURITY.md describes the open ST-3 items in plain terms (what's affected, that it needs something already on the
-  laptop or home network), without step-by-step detail; plus a line that it's a hobby project, not professionally audited.
+  laptop or home network; corrected in review round 2: data-handling items are listed as such), without step-by-step detail; plus a line that it's a hobby project, not professionally audited.
 - **D-28 Mac labeled untested; no separate clean-machine test (owner yes 2026-11-05, option A).** Badge
   "Windows · Mac untested", README text to match, the bug-report form asks for the OS. The 2026-10-23 install-video
   reinstall counts as the fresh-install check (Node.js was already present).

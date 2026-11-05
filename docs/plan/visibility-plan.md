@@ -8,7 +8,7 @@ step: ST-5
 # Build With Me: Visibility Plan
 
 Replaces the first draft (`Downloads\build-with-me-visibility-plan.md`, 2026-11-05), which was written without the
-project's context. Decisions D-24 to D-32 and assumptions A-1 to A-5 are in `docs/plan/decisions.md`. The repo was
+project's context. Decisions D-24 to D-35 (D-33 and D-34 open) and assumptions A-1 to A-9 are in `docs/plan/decisions.md`. The repo was
 renamed 2026-11-05 (owner yes): `github.com/paveliko123/build-with-me`, demo `https://paveliko123.github.io/build-with-me/`.
 In-app screens keep "Build With Me at Home".
 
@@ -36,12 +36,12 @@ is checked.
 
 | # | Item | Done when |
 |---|---|---|
-| P-1 | **Remove the hackathon story (D-32).** Rename `devpost/` to `docs/design/`; update the paths in code comments, README, SECURITY.md and `.gitignore`; drop the demo page's "modified Devpost…" bullet; shorten the README credit to one line under Credits. Make the root `LICENSE` plain MIT so GitHub recognizes it (A-9), with the Devpost notice kept in `app/skills/LICENSE` and the README credit line; keep the course skills themselves and the guide's internal name-mapping lines in `server/journey/prompt/wrapperLayer.ts` (kids never see them). | A search of tracked files outside `app/skills`, `app/dist/skills`, `LICENSE`, `server/journey/prompt/` (incl. the `safety.ts` check pattern, which must stay), `app/dist` (rebuilt from it), `docs/design/` and `docs/plan/` finds no "devpost" or "hackathon"; the scripts' own write paths (`scripts/e1-isolation.ts`, `e2-speech.ts`, `idea-page.mjs`, `usage-experiment.ts`) point at `docs/design/`; `npm run typecheck`, `npm run test:guard` and `npm run build` pass (`npm test` doesn't exist). |
+| P-1 | **Remove the hackathon story (D-32).** Rename `devpost/` to `docs/design/`; update the paths in code comments, README, SECURITY.md and `.gitignore`; drop the demo page's "modified Devpost…" bullet; shorten the README credit to one line under Credits. Make the root `LICENSE` plain MIT so GitHub recognizes it (A-9), with the Devpost notice kept in `app/skills/LICENSE` and the README credit line; keep the course skills themselves and the guide's internal name-mapping lines in `server/journey/prompt/wrapperLayer.ts` (kids never see them). | A search of tracked files outside `app/skills`, `app/dist/skills`, `LICENSE`, `server/journey/prompt/` (incl. the `safety.ts` check pattern, which must stay), `app/dist` (rebuilt from it), `docs/design/` and `docs/plan/` finds no "devpost" or "hackathon" except the README credit line and the comments that credit the course skills (`scripts/stamp-build.mjs:3`, `server/journey/skillsDir.ts:1`); the scripts' own write paths (`scripts/e1-isolation.ts`, `e2-speech.ts`, `idea-page.mjs`, `usage-experiment.ts`) point at `docs/design/`; `npm run typecheck`, `npm run test:guard` and `npm run build` pass (`npm test` doesn't exist). |
 | P-2 | **README first screen (§3).** | At 1366×768 the first screen shows what it is, who it's for, and the GIF and demo link without scrolling (the rest of §3's first-screen list may sit just below). |
 | P-3 | **Mac labeled untested (D-28).** Badge "Windows · Mac untested"; the "What you need" line matches. | Badge and text agree. |
-| P-4 | **Known limitations (D-27, A-3).** SECURITY.md gets a short "Known limitations" list: the open review items in plain terms (what's affected, that each needs something already on the laptop or home network), no step-by-step detail, plus "a hobby project, not professionally audited". It also says the safety check runs in the guide's conversation by default (audit line 54). | The list names every open ST-3 item from `docs/design/security-audit.md` without exploit steps; the 13 Low/Info ST-4 items get one grouped line (A-3 names only ST-3, D-27 says "open items"; default, owner may change). |
-| P-5 | **Bug-report form.** `.github/ISSUE_TEMPLATE/bug.yml` with fields: Windows or Mac, Node.js version, Claude plan (Pro, Max, Team, Enterprise), what happened, what you expected. Plus a short "idea" form and a `config.yml` that sends security reports to SECURITY.md. | A new issue on GitHub shows both forms and the security link. |
-| P-6 | **Release `v0.1.2` (D-27).** After P-1 to P-5 are merged, tag the Phase 0 merge commit (not `ca17c35`, the 0.1.2 build) with short notes: what it does, how to install, link to the limitations list. The version number stays 0.1.2, so installed copies don't receive Phase 0 changes. | The Releases page shows v0.1.2 and the notes' limitations link works. |
+| P-4 | **Known limitations (D-27, A-3).** SECURITY.md gets a short "Known limitations" list: the open review items in plain terms, in two groups: weaknesses, each with what it actually needs to matter (for example another program on the laptop, or someone on the home network), and how it handles data today (the kids' runs ignore the parent's telemetry opt-outs, the kid's nickname goes to the report writer, prompt files are kept for a week); no step-by-step detail, plus "a hobby project, not professionally audited". It also says the safety check runs in the guide's conversation by default (audit line 54). | The list names every open ST-3 item from `docs/design/security-audit.md` without exploit steps; the 13 Low/Info ST-4 items get one grouped line (A-3 names only ST-3, D-27 says "open items"; default, owner may change). |
+| P-5 | **Bug-report form.** `.github/ISSUE_TEMPLATE/bug.yml` with fields: Windows or Mac, Node.js version, Claude plan (Pro, Max, Ultra, Team, Enterprise, other or unsure), what happened, what you expected. Plus a short "idea" form and a `config.yml` that sends security reports to SECURITY.md. | A new issue on GitHub shows both forms and the security link. |
+| P-6 | **Release `v0.1.2` (D-27).** After P-1 to P-5 and P-11 are merged, tag the Phase 0 merge commit (not `ca17c35`, the 0.1.2 build) with short notes: what it does, how to install, link to the limitations list. The version number stays 0.1.2, so installed copies don't receive Phase 0 changes. | The Releases page shows v0.1.2 and the notes' limitations link works. |
 | P-7 | **Repo settings (owner clicks).** Website: set (new demo URL). Topics: `claude-code`, `claude-code-plugin`, `kids-coding`, `parents`, `local-first`, `plan-first`. Social preview image: 1280×640 from the video's closing card. | The repo page shows the link and topics; a shared link shows the picture. |
 | P-8 | **GitHub profile (owner clicks, 5 minutes).** Name, bio, README and pin are done (decisions.md; seen 2026-11-05). Left: picture, and the website link changed to the new demo URL (the old one is 404). No employer or work email. | The profile shows the picture and a working website link. |
 | P-9 | **Profile README.** Done 2026-11-05 (owner yes): public repo `paveliko123/paveliko123` with the §8 text. | The profile shows the README, with the new repo and demo URLs. |
@@ -147,7 +147,7 @@ The people table, each person's evidence and route, and the "checked and dropped
 
 - Under 120 words, one ask, feedback not promotion. Plain words; describe what a kid and a parent see.
 - Only claims the README supports; no "kid-safe" (D-26). Real links only: repo, demo, video, sample report.
-- One follow-up after 7 days at most.
+- Communities: one follow-up reply after 7 days at most. People: one message each, no follow-up (§5.4).
 - Never name someone's kids.
 
 **Template** (people and the Nerdy Parents Club):
@@ -184,8 +184,8 @@ welcome, especially from Mac users".
 |---|---|---|
 | Week 0 | Phase 0 (Claude builds P-1 to P-6 and P-11; owner does P-7, the rest of P-8 and P-10 (listening, 3 min); P-9 is done; the GIF recording and screenshots) | 2–3 |
 | Week 1 | Listings 1–3 | 1–1.5 |
-| Week 2 | The dev.to write-up (A-7); r/ClaudeCode showcase; Nerdy Parents Club | 3 |
-| Week 3 | r/SideProject; one or two people; optional r/ClaudeAI; fix what testers hit | 2–3 |
+| Week 2 | The dev.to write-up, capped at 2.5 hours (A-7); Nerdy Parents Club | 2.5–3 |
+| Week 3 | r/ClaudeCode showcase; r/SideProject; one or two people; optional r/ClaudeAI; fix what testers hit | 2–3 |
 | Week 4 | Review the numbers; keep, change or stop | 0.5 |
 
 Every Friday, write down from Insights → Traffic (it keeps only 14 days): stars, unique visitors, top referrers,
@@ -195,7 +195,7 @@ installs reported, issues opened by others.
 |---|---|---|
 | Stars | 25 | Many visitors but few stars: the first screen isn't working. |
 | Referrers | Know which route sent people | Drop the weakest route. |
-| Families who tried it | 2 | Ask one of them where the install stuck. |
+| Families who tried it | No target, a signal only | Ask any who tried it where the install stuck. |
 | Issues from others | 1 | None means no installs, not no bugs. |
 
 ## 8. Profile README draft (P-9)
