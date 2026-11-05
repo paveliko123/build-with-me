@@ -1,6 +1,6 @@
 ---
 doc: visibility-plan
-status: reviewed (3 rounds), waiting for owner card D-37 and the owner yes
+status: reviewed (3 rounds), waiting for the owner yes
 updated: 2026-11-05
 step: ST-5
 ---
@@ -8,7 +8,7 @@ step: ST-5
 # Build With Me: Visibility Plan
 
 Replaces the first draft (`Downloads\build-with-me-visibility-plan.md`, 2026-11-05), which was written without the
-project's context. Decisions D-24 to D-36 (D-37 open) and assumptions A-1 to A-9 are in `docs/plan/decisions.md`. The repo was
+project's context. Decisions D-24 to D-37 and assumptions A-1 to A-9 are in `docs/plan/decisions.md`. The repo was
 renamed 2026-11-05 (owner yes): `github.com/paveliko123/build-with-me`, demo `https://paveliko123.github.io/build-with-me/`.
 In-app screens keep "Build With Me at Home".
 
@@ -65,7 +65,7 @@ and "Watch the 2½-minute walkthrough" (the video, A-5) → the 18+ note plus th
   "have your own Claude check it" block).
 - **Contributing:** how to report a bug (the P-5 forms), what help is welcome (Mac testing, translations, ideas).
 
-**Moved:** "How kids are kept safe" and "The parent report" move up, right after "What a kid does". "Forgot your
+**Moved:** "Safety layers and their limits" (D-37; was "How kids are kept safe") and "The parent report" move up, right after "What a kid does". "Forgot your
 PIN", "Updating" and "Uninstalling" go under one collapsed **Help** heading.
 
 **Dropped from the first draft:** the comparison table with hosted kids' tools. Its facts about other products
@@ -229,7 +229,7 @@ Bio (160 characters max), as set: "Parent and hobby builder. I make small open-s
   use it is the parent's decision. **D-33 (owner yes 2026-11-05):** the README's 18+ note and the FAQ get one line,
   "Anthropic may restrict accounts that show signs of use by someone under 18." Posts stay as they are; Anthropic
   isn't asked first.
-- **Open cards before build:** D-37 (the README heading "How kids are kept safe" against D-26).
+- **Open cards before build:** none (D-36 and D-37 answered 2026-11-05).
 - **Small audience:** a paid plan, the Claude Code command-line tool and a terminal. Fine for stars; don't judge
   success by mainstream reach.
 - **Real examples skew younger:** most parents found build with kids of 5–7, not 8–13 (Verified, two researchers).

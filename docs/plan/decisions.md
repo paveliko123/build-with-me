@@ -64,3 +64,6 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
 - **D-36 Trim the audit's open items (owner yes 2026-11-05, option B).** In `docs/design/security-audit.md`, the eight
   open medium items and the open low items get the same plain wording as SECURITY.md's known limitations: no file,
   line or step-by-step fix. Fixed items keep their detail. SECURITY.md keeps its link. Built in Phase 0 with P-4.
+- **D-37 README heading "🛡️ How kids are kept safe" becomes "🛡️ Safety layers and their limits" (owner yes
+  2026-11-05, option A; follows D-26).** Section heading and its contents-table link; the `#safety` anchor stays.
+  Built in Phase 0 with P-2.

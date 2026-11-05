@@ -45,8 +45,8 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Research people and places: Claude, Codex Terra, Gemini Flash (D-30)
   - [x] Draft the revised plan
   - [x] Review round 1 to Review round 3
-  - [!] Card D-37 · needs you: answer the last card
-  - [ ] Your yes
+  - [x] Owner cards D-24 to D-37
+  - [!] Your yes · needs you: yes on the whole visibility plan
 
 ## Checks of 0.1.2 on the real app
 - [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop <!-- devpost\checklist.md:351, :374, :425 -->
