@@ -28,3 +28,4 @@ service-account*.json
 /.claude/
 /.tmp/
 docs/plan/.live/
+/docs/plan/private/

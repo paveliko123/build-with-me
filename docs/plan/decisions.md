@@ -46,3 +46,8 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
   created with the profile README (plan P-9). The owner set name and bio; picture and pin are the owner's clicks.
 - Gemini Flash research merged into the plan 2026-11-05: dev.to write-up, r/SideProject, Khe Hy (all Gemini only,
   labeled Researched).
+- **D-35 Repo renamed to `build-with-me` (owner instruction 2026-11-05).** Display name "Build With Me" in the README,
+  demo page, plugin manifest, setup skill, slash-command text and design docs. Not changed (owner: not worth it): the
+  in-app screens, and the old demo address (now 404; the demo lives at paveliko123.github.io/build-with-me/). Internal
+  IDs `build-with-me-home` (marketplace) and the tablet certificate name stay.
+- A-6 Outreach names live in a git-ignored file, `docs/plan/private/outreach-people.md`, since the repo is public.
