@@ -79,6 +79,12 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Anthropic directory submitted (owner 2026-11-05); held for security scan and policy review
   - [ ] Check results: Anthropic Submissions, issue #3491, mods4claude
 
+- [>] ST-11 Week 2: Nerdy Parents Club email, dev.to write-up (plan §5.2, §5.3) · started 2026-11-05 · drafts: docs/plan/outreach-week2.md
+  - [x] Draft: club email
+  - [!] Your yes and send: club email · needs you: yes, then send from Gmail
+  - [ ] Draft: dev.to post
+  - [ ] Your yes and publish: dev.to post
+
 ## Checks of 0.1.2 on the real app
 - [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop <!-- docs\design\checklist.md:351, :374, :425 -->
 
