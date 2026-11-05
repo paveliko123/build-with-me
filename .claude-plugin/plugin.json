@@ -4,6 +4,8 @@
   "version": "0.1.2",
   "description": "A fully local tool for parents to introduce their own kids to Claude Code and plan-first building, on the parent's own account and with the parent supervising. Kids' data is stored on your computer; nothing is sent to the developer, no analytics. Timed passes and a report after every project help you stay in the loop.",
   "author": { "name": "Build With Me" },
+  "homepage": "https://paveliko123.github.io/build-with-me/",
+  "repository": "https://github.com/paveliko123/build-with-me",
   "license": "MIT",
   "keywords": ["parents", "family", "plan-first", "local"]
 }
