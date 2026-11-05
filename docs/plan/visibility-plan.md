@@ -1,6 +1,6 @@
 ---
 doc: visibility-plan
-status: reviewed (3 rounds), waiting for owner cards D-33, D-34, D-36, D-37 and the owner yes (round 1 fixes applied)
+status: reviewed (3 rounds), waiting for owner cards D-33, D-34, D-36, D-37 and the owner yes
 updated: 2026-11-05
 step: ST-5
 ---
@@ -227,7 +227,7 @@ Bio (160 characters max), as set: "Parent and hobby builder. I make small open-s
   line to the README's 18+ note and the FAQ, or not. The Reddit outline, the message template and the profile README
   also say "my kids ... on my account"; the same card decides whether they carry the line, and whether to ask Anthropic
   before submitting to its directory.
-- **Open cards before build:** D-33 (above) and D-34 (skip Show HN, which narrows D-25).
+- **Open cards before build:** D-33 (above), D-34 (skip Show HN, which narrows D-25), D-36 (keep the security audit with its open items public, or trim it) and D-37 (the README heading "How kids are kept safe" against D-26).
 - **Small audience:** a paid plan, the Claude Code command-line tool and a terminal. Fine for stars; don't judge
   success by mainstream reach.
 - **Real examples skew younger:** most parents found build with kids of 5–7, not 8–13 (Verified, two researchers).

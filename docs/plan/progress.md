@@ -42,9 +42,10 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Evaluate the draft against the repo
   - [x] Interview (D-24 to D-29)
   - [x] Check the Devpost video (A-5)
-  - [ ] Research people and places: Claude, Codex Terra, Gemini Flash (D-30)
+  - [x] Research people and places: Claude, Codex Terra, Gemini Flash (D-30)
   - [x] Draft the revised plan
-  - [ ] Review round 1 to Review round 3
+  - [x] Review round 1 to Review round 3
+  - [!] Cards D-33, D-34, D-36, D-37 · needs you: answer the four cards
   - [ ] Your yes
 
 ## Checks of 0.1.2 on the real app
