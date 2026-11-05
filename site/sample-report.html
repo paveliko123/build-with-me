@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sam built &quot;My Coloring Book&quot; · Parent report</title>
+<style>:root{--bg:#f6f4ef;--card:#fff;--ink:#1f2430;--muted:#5d6475;--line:#e4ded3;--brand:#2f9e6e;--brand-soft:#dff3e9;--kid:#185c9e;--kid-soft:#e1eefc;--teen:#6d3fc0;--teen-soft:#eee6fb;--warn:#8a5a12;--warn-soft:#fdf2dc;--bad:#9c3535;--bad-soft:#f9e2e2;--ok:#1e7a52;--ok-soft:#dff3e9}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171c;--card:#1f232b;--ink:#eceef3;--muted:#a3a9b8;--line:#333945;--brand:#4cc08d;--brand-soft:#1b3329;--kid:#6aaef0;--kid-soft:#1d2c3e;--teen:#b08cf0;--teen-soft:#2c2340;--warn:#e0a84a;--warn-soft:#3a3020;--bad:#e07a7a;--bad-soft:#3a2222;--ok:#4cc08d;--ok-soft:#1b3329}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 60px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:14px}
+h1{font-size:26px;margin:0 0 4px} h2{font-size:17px;margin:0 0 10px} h3{font-size:15px;margin:0 0 6px}
+.muted{color:var(--muted)}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px}
+.ok{background:var(--ok-soft);color:var(--ok)} .warn{background:var(--warn-soft);color:var(--warn)} .bad{background:var(--bad-soft);color:var(--bad)} .kid{background:var(--kid-soft);color:var(--kid)} .teen{background:var(--teen-soft);color:var(--teen)}
+.head{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-start}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:14px}
+.fact{background:var(--bg);border-radius:10px;padding:10px 12px}
+.fact b{display:block;font-size:18px}
+.fact span{font-size:12px;color:var(--muted)}
+.app{display:grid;grid-template-columns:200px 1fr;gap:18px;align-items:start}
+@media (max-width:640px){.app{grid-template-columns:1fr}}
+.shot{aspect-ratio:4/3;border-radius:12px;background:linear-gradient(135deg,#7b5cff,#3a8ee2);display:grid;place-items:center;color:#fff;font-weight:800;text-align:center;padding:10px}
+.shot .e{font-size:72px;display:block;margin:auto}
+a{color:var(--kid)}
+.flag{border-left:4px solid var(--warn);background:var(--warn-soft);padding:10px 14px;border-radius:8px;margin:8px 0}
+.flag.look{border-color:var(--bad);background:var(--bad-soft)}
+.flag q{font-style:italic}
+.timeline{list-style:none;padding:0;margin:0}
+.timeline li{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.timeline li:last-child{border-bottom:none}
+.timeline .when{font-weight:700;color:var(--muted);font-size:13px}
+.bar{height:12px;border-radius:999px;background:var(--line);overflow:hidden;display:flex;margin:6px 0}
+.bar i{display:block;height:100%}
+.legend{font-size:13px;color:var(--muted);display:flex;gap:14px;flex-wrap:wrap}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle;background:var(--c)}
+details{margin-top:10px} summary{cursor:pointer;font-weight:600}
+.quote{background:var(--bg);border-radius:8px;padding:8px 12px;margin:6px 0;white-space:pre-wrap}
+@media (max-width:480px){.timeline li{grid-template-columns:1fr;gap:2px}}
+@media print{body{background:#fff}.card{break-inside:avoid;border-color:#ccc}details>*{display:block}}
+.quote b{font-size:12px;color:var(--muted);display:block}
+.note{font-size:13px;color:var(--muted);margin:10px 0 0}</style></head>
+<body><main>
+  <div class="card">
+    <div class="head"><div>
+      <span class="muted">Parent report · Thu, Oct 22, 2026</span>
+      <p class="note" style="margin:4px 0 8px"><b>Sample:</b> a real report, with names changed and shortened (the full conversation is left out).</p>
+      <h1>Sam built &quot;My Coloring Book&quot;</h1>
+      <span class="pill kid">Kid (under 13)</span> <span class="pill warn">1 flag · handled by the guide</span>
+    </div></div>
+    <div class="facts">
+      <div class="fact"><b>26 min</b><span>time spent (pass: 2 hr)</span></div>
+      <div class="fact"><b>1</b><span>rounds of changes</span></div>
+      <div class="fact"><b>This laptop</b><span>device</span></div>
+      <div class="fact"><b>Typing</b><span>how Sam answered</span></div>
+      <div class="fact"><b>≈8%</b><span>of your 5-hour limit: this app's own use (estimate)</span></div><div class="fact"><b>+4% · +1%</b><span>your whole account while it was made, 5-hour · weekly</span></div>
+    </div>
+    <p class="note">This app's share is worked out from Claude Code's count of the app's own calls, at a rate learned from 9 earlier measurements on your plan, so your own Claude use isn't in it. The account change comes from Claude Code's /usage (whole percents) and includes everything on your account while it was made.</p>
+  </div>
+  <div class="card"><h2>In one paragraph</h2><p style="margin:0">Sam started by saying they like coloring, and asked to make a coloring app. Most of the shape of the app came from Sam: pictures that run from easy (a snowman or a simple animal) to hard (a grown-up mandala), a palette for each picture, harder pictures that unlock as you finish easier ones, and the feel of a book you flip through. In Design, Sam picked a shelf of books for the first screen, each book labeled &quot;Level #&quot;. A book gets pulled off the shelf and opens on page 1. The picture fills most of the screen with the palette beside it. Sam also asked for outline-only pictures with closed shapes, and for fills that happen right away and can be undone or changed. The guide filled in a few details itself: the name, 4 books with 3 pictures each, and a &quot;Done&quot; button. The guide said clearly that Sam could change any of those. The app was built and the session finished. While it was building, Sam came up with three more changes: a secret picture at the end of each book that shows up once the book is finished, a sparkle effect when it appears, and keeping the palette beside the picture on wide screens so the picture can run top to bottom. Once, Sam mentioned their school while saying who they wanted to show the app to; the guide hid the name, kindly said it isn&#39;t needed here, and carried on. Sam&#39;s answers were short and decisive, and the session went smoothly.</p></div>
+  <div class="card"><h2>The app</h2><div class="app"><div class="shot"><span><span class="e">🎨</span></span></div><div><h3>My Coloring Book</h3><p class="muted" style="margin:0 0 8px">A calm coloring app that opens on a shelf of level books. You pull a book off the shelf, flip through its outline pictures, and tap a color and then a shape to fill it in. Finishing the pictures in a book unlocks the next, harder book, and the app saves your progress on this device.</p><p style="margin:0"><a href="images/sample-coloring-book.png" target="_blank" rel="noopener">See the app ↗</a> &nbsp;·&nbsp; <span class="muted">in a real report this opens the app itself, on this computer and on home Wi-Fi while Build With Me is running</span></p></div></div></div>
+  <div class="card"><h2>Safety</h2>
+    <div class="flag"><b>⚠ School mentioned, gently handled</b> <span class="muted">· 9:35 PM · Idea step</span><p style="margin:6px 0 0">Sam said: <q>mainly that it&#39;s an app that Ive built, I want to show it to my class at [school]</q>. Sam mentioned the name of their school. The guide kindly said there&#39;s no need to share where you go to school, then went back to its question. Sam moved straight on and described the book of pictures. No more personal details came up.</p></div>
+    <ul style="margin:10px 0 0"><li><span class="pill warn">Look</span> A personal detail came up; it was hidden.</li><li><span class="pill ok">OK</span> Nothing unsuitable from the guide or the builder. Everything was about a calm coloring app.</li><li><span class="pill ok">OK</span> The whole session stayed on the coloring app.</li></ul>
+    <p class="note">Worth a chat? Nothing worrying came up. It could be nice to ask Sam which book they want to color first.</p>
+    
+  </div>
+  <div class="card"><h2>Whose ideas?</h2><div class="bar"><i style="width:80%;background:var(--kid)"></i><i style="width:20%;background:var(--brand)"></i></div><div class="legend"><span style="--c:var(--kid)">Sam's ideas: 80%</span><span style="--c:var(--brand)">Guide's suggestions: 20%</span></div><p class="muted" style="margin:8px 0 0">The coloring idea, the difficulty levels, unlocking, the flip-through book, the shelf with level labels, the layout, outline-only pictures, undoable fills and all three changes were Sam&#39;s. The guide suggested the shelf option when Sam didn&#39;t answer at first, and chose the name, the number of books and pictures, and the Done button. <i>(an estimate)</i></p><p style="margin:10px 0 0">Ideas Sam had while the app was building: <q>add a secret picture at the end of each book that is revealed only when all pictures in that book are finished</q>, <q>make the secret picture reveal with a sparkle effect</q>.</p></div>
+  <div class="card"><h2>How it went</h2><ul class="timeline"><li><span class="when">9:29 PM Start</span><span>Sam said they like coloring, and that they want to learn how to work with an AI.</span></li><li><span class="when">9:31 PM Idea</span><span>Sam laid out pictures from easy (snowman) to hard (mandala), a palette for each picture, unlocking harder pictures, and a book you flip through.</span></li><li><span class="when">9:37 PM Design</span><span>Sam chose a shelf of books labeled by level, a book that opens on page 1, a big picture with the palette beside it, outline-only pictures, and fills that can be undone. The guide chose the name, 4 books with 3 pictures each, and a Done button.</span></li><li><span class="when">9:43 PM Tech plan</span><span>The guide wrote the plan: one web page, pictures made of fillable shapes, progress saved on this device, no sound.</span></li><li><span class="when">9:43 PM Build</span><span>The app was built while Sam thought up improvements.</span></li><li><span class="when">9:49 PM Built</span><span>The app was built while Sam thought up improvements.</span></li><li><span class="when">9:54 PM Changes</span><span>Sam asked for a secret picture at the end of each book, a sparkle when it appears, and the palette kept beside the picture on wide screens.</span></li><li><span class="when">9:55 PM Ship</span><span>The session finished.</span></li><li><span class="when">9:55 PM Ship</span><span>The session finished.</span></li></ul></div>
+  <div class="card"><h2>Talk about it together</h2>
+    <ul style="margin:0"><li>Can you show me your shelf of coloring books? Which picture are you most looking forward to coloring?</li><li>What do you think the secret picture at the end of each book should be?</li></ul>
+    
+  </div>
+  <p class="note">Made by Build With Me on your computer (written by Claude Opus from the whole conversation). Personal details were hidden as [name], [school] and so on.</p>
+</main></body></html>

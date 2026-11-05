@@ -59,8 +59,13 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] P-10 Video sound: one AI voiceover, no kids (owner 2026-11-05)
   - [x] P-7 Repo website link and six topics (topics set 2026-11-05, owner "set them")
   - [!] P-7 Social preview image · needs you: upload it (.tmp/phase0/social-preview.png)
-- [!] ST-8 Assets: README GIF, three screenshots, sample parent report (plan §4, A-10) · needs you: card D-38 (how to make the assets)
-- [ ] ST-9 Week 1 listings: Anthropic directory, awesome-claude-code, mods4claude, ClaudePluginHub (plan §5.1) · after ST-8
+- [x] ST-8 Assets: screenshots and sample parent report (plan §4, D-38) · 2026-11-05 → 2026-11-05 · owner yes 2026-11-05 (publish)
+  - [x] Sample report: rename and trim the Coloring Book report
+  - [x] Screenshots of finished apps, checked for personal details
+  - [x] README See it section
+  - [x] Your yes on the changed lines
+  - [x] Publish
+- [ ] ST-9 Week 1 listings: Anthropic directory, awesome-claude-code, mods4claude, ClaudePluginHub (plan §5.1) · next
 
 ## Checks of 0.1.2 on the real app
 - [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop <!-- docs\design\checklist.md:351, :374, :425 -->

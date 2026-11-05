@@ -34,7 +34,7 @@ About two minutes of mock screens in your browser. Nothing to install.
 
 | Getting started | Using it | Peace of mind |
 |---|---|---|
-| [✨ What a kid does](#what-a-kid-does) | [📅 Every day](#every-day) · [🪟 Keep the window open](#stopping) | [🛡️ Safety layers and their limits](#safety) |
+| [✨ What a kid does](#what-a-kid-does) · [👀 See it](#see-it) | [📅 Every day](#every-day) · [🪟 Keep the window open](#stopping) | [🛡️ Safety layers and their limits](#safety) |
 | [🧰 What you need](#what-you-need) | [📱 Tablets and phones](#tablets) | [📄 The parent report](#report) |
 | [⬇️ Install](#install) | [❓ FAQ](#faq) | [🔒 Privacy](#privacy) |
 | | [🆘 Help](#help): [🔑 Forgot your PIN](#forgot-pin) · [🔄 Updating](#updating) · [🗑️ Uninstalling](#uninstalling) | [⚡ Your Claude plan](#plan-usage) |
@@ -53,6 +53,18 @@ About two minutes of mock screens in your browser. Nothing to install.
 6. 📄 **You get a report**: what they made, whose ideas they were, anything worth a chat, and how much of your plan it used.
 
 Kids (under 13) get short questions and picture cards. Teens (13–17) see and approve the plans.
+
+---
+
+<a id="see-it"></a>
+## 👀 See it
+
+Three apps my own kids made with it, and the top of a parent report. [Read the whole sample report](https://paveliko123.github.io/build-with-me/sample-report.html) (a real report, with names changed and shortened).
+
+| | |
+|---|---|
+| <img src="site/images/sample-coloring-book.png" alt="My Coloring Book: a shelf of level books to color" width="400"> | <img src="site/images/sample-piano.png" alt="piano: a music staff where you tap to add notes" width="400"> |
+| <img src="site/images/sample-unicorn.png" alt="Unicorn Flip Show: a magic window on a rainbow" width="400"> | <img src="site/images/sample-report-top.png" alt="The top of a parent report" width="400"> |
 
 ---
 
