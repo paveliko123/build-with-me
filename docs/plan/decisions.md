@@ -77,3 +77,4 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
   kids' profile. A note box, if any, says so (docs/plan/listings-week1.md).
 - A-12 Directory listing icon: the existing 512 px app icon copied to .claude-plugin/icon.png (portal Validate 2026-11-05 warned "No icon"; the icon is fixed at first save or submit). Validate showed no size block (281 files, 9 MB, within limits); 20 policy holds are for a reviewer.
 - A-13 plugin.json gets privacyPolicyUrl (README #privacy) and documentationUrl (README) for the directory listing; the portal had no privacy link and used the video as documentation. Terms of service left unset (MIT license). validate --strict passes.
+- A-14 Directory "Listed on": Claude Code only; Cowork and the Claude apps unticked (it runs a local server for the home network; tested only in Claude Code).
