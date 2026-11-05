@@ -73,7 +73,8 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Draft: four entries
   - [x] Card D-39: under-18 answer No (owner 2026-11-05)
   - [x] awesome-claude-code submitted: issue hesreallyhim/awesome-claude-code#3491 (owner 2026-11-05)
-  - [ ] Your submits: mods4claude, ClaudePluginHub
+  - [x] mods4claude submitted, Commands (owner 2026-11-05); hand review
+  - [ ] Your ClaudePluginHub check: find a Submit link, else skip
   - [x] Your Validate: sizes OK; icon added (A-12)
   - [x] Anthropic directory submitted (owner 2026-11-05); held for security scan and policy review
   - [ ] Anthropic review result · resumes: check Submissions in a few days
