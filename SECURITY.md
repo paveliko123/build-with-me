@@ -29,10 +29,10 @@ Build With Me is a hobby project and has not been professionally audited. These 
 **Weaknesses**
 
 - **The parent sign-in isn't tied to one port.** The browser sends it to other web pages on the same laptop's `localhost` address too. It matters only if another program is already running on the laptop and serving pages there.
-- **Opening tablet setup uses a plain page address, not a button press.** It only works from an unlocked Parent area on the laptop, and it opens the setup window for 15 minutes. While that window is open, devices on the home network can see the setup page and the certificate.
+- **Opening tablet setup uses a plain page address, not a button press.** It only works from an unlocked Parent area on the laptop, and it opens the setup window for 15 minutes. While that window is open, devices on the home network can see the setup page and the certificate. It matters only if another program on the laptop opens that address while the Parent area is unlocked, and someone on the home network looks during those 15 minutes.
 - **Unlocking the Parent area in a browser that also holds a kid's pass doesn't keep the two apart.** It matters only if a kid uses that browser on the laptop while the Parent area is unlocked. The Parent area locks itself after 15 idle minutes.
-- **Resetting the PIN leaves no record, and the PIN page names the reset command.** Resetting needs someone who can already run Claude Code as you on the laptop.
-- **The emoji a kid can pick as an app's icon comes from the guide's reply and isn't run through the safety check.** It is only checked for being a single emoji.
+- **Resetting the PIN leaves no record, and the PIN page names the reset command.** Resetting needs anyone using your computer account, for example a kid on the family laptop while you're signed in.
+- **The emoji a kid can pick as an app's icon comes from the guide's reply and isn't run through the safety check.** It is only checked for being a single emoji. The worst case is an unsuitable emoji as an app's icon, and the guide has to pick it.
 - **A few of the guide's built-in starter ideas invite personal details** (a "page about me", a mood tracker, a family recipe card). The masking and the safety check still apply.
 
 **How it handles data today**

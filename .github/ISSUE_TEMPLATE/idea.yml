@@ -1,7 +1,7 @@
 name: Idea
 description: Suggest something that would make Build With Me better
 title: "[Idea]: "
-labels: ["idea"]
+labels: ["enhancement"]
 body:
   - type: textarea
     id: idea

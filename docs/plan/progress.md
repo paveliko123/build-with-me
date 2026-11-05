@@ -49,7 +49,7 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Your yes
 - [>] ST-6 Phase 0: repo ready for outreach (P-1 to P-6, P-11, D-36, D-37) · est 20m · est 3.2% · started 2026-11-05 13:44 · owner go-ahead 2026-11-05 13:44
   - [x] Builder brief
-  - [ ] Build live: hackathon removal, README, Mac badge, limitations, audit trim, forms, manifest
+  - [x] Build live: hackathon removal, README, Mac badge, limitations, audit trim, forms, manifest
   - [ ] Review round 1
   - [ ] Checks
   - [ ] Your yes on the README and user-visible wording (before → after)

@@ -2,7 +2,7 @@
 
 *Report only. No source was changed, committed or pushed. No Claude credentials were read or copied. The parent's real install (ports 4747/4748, `%USERPROFILE%\Build With Me`, `%USERPROFILE%\.claude\plugins\data\`) was never touched; all live testing ran against a throwaway test server on port 4801/4802 with temp data folders. No microphone or sound was used.*
 
-Date: 2026-10-06 · Auditor: automated security review (static reading + live black/grey-box testing on an isolated test server) · Scope: the whole repo, per `devpost/security-audit-brief.md` Parts A, B and C.
+Date: 2026-10-06 · Auditor: automated security review (static reading + live black/grey-box testing on an isolated test server) · Scope: the whole repo, per `docs/design/security-audit-brief.md` Parts A, B and C.
 
 ---
 
@@ -16,7 +16,7 @@ Date: 2026-10-06 · Auditor: automated security review (static reading + live bl
 
 1. **Block DNS rebinding — add a `Host` allowlist** (High, `server/index.ts`). Reject any request whose `Host` isn't `localhost`/`127.0.0.1`/`::1` or a current home IP, as the first global middleware. One small middleware closes the parent-gate bypass and the rebinding-reachable speech/`/apps`/info-disclosure routes at once. *(Finding H1)*
 2. **Put limits on what a pass can spend** (High, `server/journey/routes.ts`, `build.ts`). Add a per-pass turn rate limit, a cap on builds and reports per pass/day, and a cap on projects per kid, so a single pass can't drain the parent's 5-hour window and weekly quota. *(Finding H2)*
-3. **Scrub maintainer PII from tracked files and rewrite git history** (Medium, publish-blocking). Remove the Windows username, home LAN IP (`<home-ip>`) and absolute user paths from `devpost/e1-results.md`, `devpost/e2-results.md`, `scripts/guard-test.ts`, and from history (commit `07fc550` etc.). Do it now, while there is no public remote. *(Finding C9a)*
+3. **Scrub maintainer PII from tracked files and rewrite git history** (Medium, publish-blocking). Remove the Windows username, home LAN IP (`<home-ip>`) and absolute user paths from `docs/design/e1-results.md`, `docs/design/e2-results.md`, `scripts/guard-test.ts`, and from history (commit `07fc550` etc.). Do it now, while there is no public remote. *(Finding C9a)*
 4. **Add the missing governance + consent files** (Medium, publish-readiness). A root `LICENSE` (MIT, the project's own holder), a `README`, a `SECURITY.md`, a privacy section describing local data, and a prominent **user-facing 18+/terms note** (Anthropic's terms require the account holder to be 18+; letting a child use it is the parent's decision and responsibility). Today the 18+ note lives only in a planning doc. *(Finding C9b)*
 5. **Tighten the local attack surface** (Medium): require a live pass (or parent) on the speech routes and cap concurrent utterance buffers; add `Secure` to the pass and parent cookies; and cascade-delete a removed kid's projects/apps/reports instead of orphaning them on disk. *(Findings C5, C3b, C6a)*
 
@@ -66,8 +66,8 @@ Fixed and checked by `npm run verify:security` (23/23, no Claude calls), with sl
 | M2 | Medium | C.6 | Data retention | server/kids.ts:34-42; parentRoutes.ts:93 | Removing a kid orphans all their transcripts/apps/reports on disk — no erasure |
 | M3 | Medium | C.2 | Parent auth lockout DoS | server/auth.ts:56-68 | Global in-memory PIN lockout lets any loopback source lock the real parent out, and denies a correct PIN while locked |
 | M4 | Medium | C.3 | Pass cookie / hijack | server/passes.ts:194-196 | `bwm_pass` has no `Secure` flag and is honoured from any LAN address → a captured cookie = a kid session that spends the plan |
-| C9a | Medium | C.9 | Repo PII | devpost/e1-results.md:15,25; e2-results.md:15,17; scripts/guard-test.ts:5,6 | Windows username, home LAN IP, user paths and a stray email in tracked files and git history |
-| C9b | Medium | C.9 | Repo governance | (root) LICENSE/README/SECURITY/PRIVACY; devpost/prd.md:112 | No root LICENSE/README/SECURITY/privacy and no user-facing 18+/terms note |
+| C9a | Medium | C.9 | Repo PII | docs/design/e1-results.md:15,25; e2-results.md:15,17; scripts/guard-test.ts:5,6 | Windows username, home LAN IP, user paths and a stray email in tracked files and git history |
+| C9b | Medium | C.9 | Repo governance | (root) LICENSE/README/SECURITY/PRIVACY; docs/design/prd.md:112 | No root LICENSE/README/SECURITY/privacy and no user-facing 18+/terms note |
 | A1 | Low | A.4/B | Identity scrub gaps | server/claude/guard.ts:44-50 | `scrubText` misses obfuscated emails, spaced/UNC/lowercase paths, bare username/org/machine names |
 | A2 | Low | A.4/B | Leak + output-check coverage | server/journey/claude.ts:129; guideTurn.ts:369 | `LEAK` runs only on `say`; the output safety check never sees `visualHtml` or `doc.markdown` |
 | A3 | Low | B | Masked text not re-defused | server/journey/guideTurn.ts:280; changes.ts:247 | The check's `masked` string skips `personText()`, so a crafted `[app]` prefix could be labelled "app" |
@@ -79,8 +79,8 @@ Fixed and checked by `npm run verify:security` (23/23, no Claude calls), with sl
 | A9 | Low | A.6 | Unscrubbed logs | server/claude/runner.ts:164,238 | `claude` stderr tails and up to 1,500 chars of raw replies reach `server.log` unscrubbed |
 | B1 | Low | B.5 | checkApp regex gaps | server/journey/appCheck.ts:5-19 | Regex misses dynamic/obfuscated script+fetch+beacon and `type=text` fake logins (backstopped by CSP/sandbox/appCheck) |
 | B2 | Low | B.5 | appWords SVG blind spot | server/journey/build.ts:70-76 | `appWords()` strips `<svg>…</svg>`, so harmful text drawn as SVG `<text>` evades the app content check |
-| C1 | Low | C.1 | Information visible on the home network | — | Anyone on the home Wi-Fi can see the laptop's name and home network address on the tablet setup page while tablet setup is open. It needs someone on the home network. |
-| C2 | Low | C.3 | Finished apps on the laptop | — | Someone using the family laptop without a pass can open any kid's finished app. It needs access to the family laptop, and finished apps hold no personal details. |
+| C1 | Low | C.1 | Information visible on the home network | — | Anyone on the home Wi-Fi can see the laptop's name whenever Build With Me is running, and its home network address on the tablet setup page while setup is open. It needs someone on the home network. |
+| C2 | Low | C.3 | Finished apps on the laptop | — | Someone using the family laptop without a pass can open any kid's finished app. It needs access to the family laptop, and finished apps are built from the masked plan. |
 | C3b | Low | C.3 | Typed-code lockout bypass | server/passes.ts:180 | The 5/60s per-IP lockout resets on any code that matches a pass (moot given ~40-bit entropy) |
 | C4 | Low | C.4 | Home certificate lifetime | — | The home certificate for tablets lasts 10 years, isn't rotated, and stays on the laptop after uninstall until you delete the family folder. It is limited to home and local addresses, so it can't be used against public websites. It matters only if its key file is copied from the laptop. |
 | C5b | Low | C.5 | Speech model download | — | The speech model is downloaded once without checking it against a known fingerprint. It needs someone able to tamper with the network during that first download. |
@@ -239,9 +239,9 @@ export function removeKid(id: string): boolean {
 
 ### C9a — Maintainer PII in tracked files and git history (Medium, publish-blocking, C.9)
 
-**File:** `devpost/e1-results.md:15,25`; `devpost/e2-results.md:15,17`; `scripts/guard-test.ts:5,6`; history commit `07fc550`.
+**File:** `docs/design/e1-results.md:15,25`; `docs/design/e2-results.md:15,17`; `scripts/guard-test.ts:5,6`; history commit `07fc550`.
 
-**What's wrong.** Files that will ship publicly contain the maintainer's real Windows username and absolute paths (`C:\Users\<user>\.local\bin\claude.exe`, `C:\Users\<user>\.claude\CLAUDE.md`, `C:\Users\<user>\AppData\x`), the real **home LAN IP** `<home-ip>`, and a second email `<a made-up email>` (a fixture, but the brief's only allowed contact address is `paveliko@gmail.com`). These are also in git history (`git log -S'<user>'` → `07fc550`). *(Verified clean: `devpost/learner-profile.md` was **never** committed — the only `learner-profile` blob in history is the template `app/skills/1-start/templates/learner-profile-template.md`; `.gitignore` has held since `07fc550`.)*
+**What's wrong.** Files that will ship publicly contain the maintainer's real Windows username and absolute paths (`C:\Users\<user>\.local\bin\claude.exe`, `C:\Users\<user>\.claude\CLAUDE.md`, `C:\Users\<user>\AppData\x`), the real **home LAN IP** `<home-ip>`, and a second email `<a made-up email>` (a fixture, but the brief's only allowed contact address is `paveliko@gmail.com`). These are also in git history (`git log -S'<user>'` → `07fc550`). *(Verified clean: `docs/design/learner-profile.md` was **never** committed — the only `learner-profile` blob in history is the template `app/skills/1-start/templates/learner-profile-template.md`; `.gitignore` has held since `07fc550`.)*
 
 **Impact.** Permanent public disclosure of the maintainer's username, home network address and local layout once the repo is pushed (and unremovable from history after others clone). Low-sensitivity individually, but the brief sets a hard rule and it is cheap to fix now, before any public remote exists.
 
@@ -252,7 +252,7 @@ export function removeKid(id: string): boolean {
 -  ['folder C:\\Users\\<user>\\AppData\\x and /Users/bob/app and /home/ann/x', false],
 +  ['mail me at someone@example.com please', false],
 +  ['folder C:\\Users\\Alex\\AppData\\x and /Users/bob/app and /home/ann/x', false],
-# devpost/e1-results.md / e2-results.md: replace the username, paths and <home-ip> with <you>/<home-ip>.
+# docs/design/e1-results.md / e2-results.md: replace the username, paths and <home-ip> with <you>/<home-ip>.
 ```
 **Verify.** `git grep -niE '<user>|192\.168|<made-up email>'` → no hits in the tree; `git log --all -S'<user>' --oneline` → empty after the rewrite.
 
@@ -260,7 +260,7 @@ export function removeKid(id: string): boolean {
 
 ### C9b — No root LICENSE/README/SECURITY/privacy and no user-facing 18+ note (Medium, C.9)
 
-**File:** repo root (missing `LICENSE`, `README.md`, `SECURITY.md`, privacy note); 18+ note only at `devpost/prd.md:112`.
+**File:** repo root (missing `LICENSE`, `README.md`, `SECURITY.md`, privacy note); 18+ note only at `docs/design/prd.md:112`.
 
 **What's wrong.** `package.json`, `.claude-plugin/plugin.json` and `marketplace.json` all declare the project MIT, but there is **no root `LICENSE`** — the only one present is `app/skills/LICENSE` (`Copyright (c) 2026 Devpost`, for the third-party course skills). There is no root `README`, no `SECURITY.md`, and no privacy section. The required **18+/terms note** ("Anthropic's terms require the account holder to be 18+; letting your kids use it is your decision and responsibility") exists only in a planning document — a user installing the plugin never sees it (`plugin.json` description and `skills/setup/SKILL.md` don't mention it).
 
@@ -285,8 +285,8 @@ export function removeKid(id: string): boolean {
 - **A9 — Unscrubbed logs** (`runner.ts:164,238`; via `claude.ts:132`, `routes.ts:74`, `reporter.ts:269`, `guideTurn.ts:357`). The `claude exited (code): <stderr tail>` path and up to 1,500 chars of a raw reply reach `server.log` without `scrubText`. **Fix:** run `scrubText` over stderr tails and logged reply snippets. *(Verified `server.log` otherwise clean of identity/kid words.)*
 - **B1 — checkApp regex gaps** (`server/journey/appCheck.ts:5-19`). The FORBIDDEN regex misses dynamic `script.src`/`setAttribute`, obfuscated `fetch`, `new Image().src`, DOM-created `<img>`, CSS `url()`, and `type=text` fake-login fields. **These are backstopped at runtime** by `APP_CSP` (`default-src 'none'; script-src 'unsafe-inline'` with no host; `connect-src 'none'; img-src data: blob:`) and the no-`allow-same-origin` sandbox, and fake-login/data-collection *text* is caught by the `appCheck` content safety call (verified: both returned `unsuitable/scam`). **Fix (belt-and-braces):** tighten the regex (`\bsrc\s*=` on any element; `\.src\s*=`; `new\s+Image`; `createElement\(['"]script`) and keep the CSP as the real control.
 - **B2 — appWords SVG blind spot** (`build.ts:70-76`). `appWords()` strips `<svg>…</svg>` before the content safety check, so harmful words drawn as SVG `<text>` are never seen by the `app` check. **Fix:** keep SVG `<text>`/`<title>` content (strip only shape/path markup) before the check. *(Narrow — the builder resists producing harmful content regardless.)*
-- **C1 — Information visible on the home network.** Anyone on the home Wi-Fi can see the laptop's name and home network address on the tablet setup page while tablet setup is open. It needs someone on the home network.
-- **C2 — Finished apps on the laptop.** Someone using the family laptop without a pass can open any kid's finished app. It needs access to the family laptop, and finished apps hold no personal details.
+- **C1 — Information visible on the home network.** Anyone on the home Wi-Fi can see the laptop's name whenever Build With Me is running, and its home network address on the tablet setup page while setup is open. It needs someone on the home network.
+- **C2 — Finished apps on the laptop.** Someone using the family laptop without a pass can open any kid's finished app. It needs access to the family laptop, and finished apps are built from the masked plan.
 - **C3b — Typed-code lockout bypass** (`passes.ts:180`). `findByCode` resets the per-IP wrong counter whenever a guess matches *any* pass, so an attacker who knows one valid code can interleave it to avoid the 5/60s lockout. Moot in practice: the typed code is ~39.6 bits (8 chars over a 31-symbol alphabet) — ~160,000 years to brute one code even without a lockout; the QR code is 128 bits. **Fix:** only reset the counter on a *successful open*, not on any match.
 - **C4 — Home certificate lifetime.** The home certificate for tablets lasts 10 years, isn't rotated, and stays on the laptop after uninstall until you delete the family folder. It is limited to home and local addresses, so it can't be used against public websites. It matters only if its key file is copied from the laptop.
 - **C5b — Speech model download.** The speech model is downloaded once without checking it against a known fingerprint. It needs someone able to tamper with the network during that first download.
