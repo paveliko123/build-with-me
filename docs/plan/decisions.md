@@ -15,3 +15,7 @@ Draft under review: `Downloads\build-with-me-visibility-plan.md` (written in ano
 - **D-26 Keep the parent-tool framing in every post (owner yes 2026-11-05, option A).** Name the safety layers, never
   "kid-safe" or "guardrails" as a label. Owner's reason: downplay and surprise rather than overclaim; not selling
   anything, so credibility comes first.
+- **D-27 Launch 0.1.2 as it is, tagged `v0.1.2`; open items listed as known limitations (owner yes 2026-11-05, option B).**
+  No audit work before launch. Owner's reason: a free hobby plugin, not meant to be perfect.
+- A-3 SECURITY.md describes the open ST-3 items in plain terms (what's affected, that it needs something already on the
+  laptop or home network), without step-by-step detail; plus a line that it's a hobby project, not professionally audited.
