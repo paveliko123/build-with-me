@@ -3,7 +3,7 @@ doc: scope
 status: approved
 ---
 
-# Build With Me at Home (working name)
+# Build With Me (working name)
 
 A parent and their kid build real apps together through the plan-first journey. It runs entirely on the family's computer, using the parent's own Claude Code login.
 

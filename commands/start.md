@@ -1,5 +1,5 @@
 ---
-description: Start Build With Me at Home (introduce your kids to Claude Code, with you supervising) and open it in the browser
+description: Start Build With Me (introduce your kids to Claude Code, with you supervising) and open it in the browser
 allowed-tools:
   - Bash(node "${CLAUDE_PLUGIN_ROOT}/app/setup-check.mjs" *)
   - Bash(node "${CLAUDE_PLUGIN_ROOT}/app/launch.mjs" *)

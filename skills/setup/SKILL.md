@@ -1,12 +1,12 @@
 ---
 name: setup
-description: Install or repair Build With Me at Home on this computer. Checks Node.js, the Claude Code command-line tool and its sign-in, the app's packages, the speech model, the data folder and the network port, fixes what it can (with the parent's normal approval prompts) and explains the rest. Use when the parent asks to set up, install, repair or start Build With Me, or when /build-with-me:start reports a problem.
+description: Install or repair Build With Me on this computer. Checks Node.js, the Claude Code command-line tool and its sign-in, the app's packages, the speech model, the data folder and the network port, fixes what it can (with the parent's normal approval prompts) and explains the rest. Use when the parent asks to set up, install, repair or start Build With Me, or when /build-with-me:start reports a problem.
 allowed-tools:
   - Bash(node "${CLAUDE_PLUGIN_ROOT}/app/setup-check.mjs" *)
   - Bash(node "${CLAUDE_PLUGIN_ROOT}/app/launch.mjs" *)
 ---
 
-# Set up Build With Me at Home
+# Set up Build With Me
 
 You are helping a parent install Build With Me, a local tool where a parent introduces their own kids to Claude Code by building small apps together, on the parent's own account. Be warm, short and concrete. Explain any step that installs something before you run it. The parent's normal permission prompts apply to everything you run.
 

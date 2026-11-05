@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Build With Me at Home — Spec</title>
+<title>Build With Me — Spec</title>
 <style>
 :root{
   --bg:#fbf8f3; --card:#fff; --ink:#1f2430; --muted:#5d6475; --line:#e6e0d6;
@@ -142,7 +142,7 @@ footer{margin-top:40px;color:var(--muted);font-size:13px}
 
 <main>
   <span class="tag" style="background:var(--parent-soft);color:var(--parent)">Spec · approved 2026-10-06</span>
-  <h1>Build With Me at Home: Technical Spec</h1>
+  <h1>Build With Me: Technical Spec</h1>
   <p class="lede">Implements the approved PRD. It reuses Build With Me's kid screens and prompt layers. The cloud back office (Firebase, Firestore, API key) becomes one small program on the family's computer that talks to the parent's own Claude Code.</p>
   <div class="links"><a href="prd.html">📋 PRD</a><a href="scope.html">🧭 Scope</a><a href="parent-mockup.html">👩‍💻 Parent mockup</a><a href="report-mockup.html">📄 Report mockup</a></div>
 
@@ -287,7 +287,7 @@ footer{margin-top:40px;color:var(--muted);font-size:13px}
         </ul></li>
       <li><b>Kids use it from:</b> the laptop's browser at <code>http://localhost:4747</code>, or a tablet on the same Wi-Fi at <code>https://&lt;laptop's home address&gt;:4748</code>.</li>
       <li><b>Install:</b> paste the README's install line into Claude Code, or run:
-<pre><code>/plugin marketplace add https://github.com/paveliko123/build-with-me-at-home.git
+<pre><code>/plugin marketplace add https://github.com/paveliko123/build-with-me.git
 /plugin install build-with-me@build-with-me-home</code></pre>
         Then type <code>/build-with-me:start</code>. The full <code>https://</code> address matters: the short <code>user/repo</code> form clones over SSH, which failed in the clean-install test on a computer without GitHub SSH keys.</li>
       <li><b>Start later:</b> the desktop shortcut, or <code>/build-with-me:start</code>.</li>

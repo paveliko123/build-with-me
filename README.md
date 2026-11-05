@@ -2,13 +2,13 @@
 
 <img src="app/assets/icon.png" alt="" width="112" height="112">
 
-# Build With Me at Home
+# Build With Me
 
 **A fully local Claude Code plugin for parents: your kids plan and build their own small apps with a friendly AI guide, on your computer and your own Claude account, with you supervising.**
 
 🏠 **Nothing is ever sent to the developer** of this plugin: no accounts, no sign-ups, no analytics, no tracking.
 
-### ▶️ [Try the demo](https://paveliko123.github.io/build-with-me-at-home/)
+### ▶️ [Try the demo](https://paveliko123.github.io/build-with-me/)
 About two minutes of mock screens in your browser. Nothing to install.
 
 ![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-d97757) ![Data stored on your computer](https://img.shields.io/badge/data-stored%20on%20your%20computer-2f9e6e) ![No tracking](https://img.shields.io/badge/analytics-none-2f9e6e) ![Windows | Mac](https://img.shields.io/badge/runs%20on-Windows%20%7C%20Mac-3a8ee2) ![License: MIT](https://img.shields.io/badge/license-MIT-8a5cd6)
@@ -69,12 +69,12 @@ Kids (under 13) get short questions and picture cards. Teens (13–17) see and a
 **1.** In Claude Code, run these two commands:
 
 ```
-/plugin marketplace add https://github.com/paveliko123/build-with-me-at-home.git
+/plugin marketplace add https://github.com/paveliko123/build-with-me.git
 /plugin install build-with-me@build-with-me-home
 ```
 
 > [!TIP]
-> Use the full `https://` address. The short `paveliko123/build-with-me-at-home` form needs GitHub SSH keys, which most computers don't have. While it starts up, sets up or resets your PIN, Claude Code runs only the plugin's own scripts (`setup-check`, `launch`, `reset-pin`) without asking each time; any other command, including installing Node.js or Claude Code, still asks you first.
+> Use the full `https://` address. The short `paveliko123/build-with-me` form needs GitHub SSH keys, which most computers don't have. While it starts up, sets up or resets your PIN, Claude Code runs only the plugin's own scripts (`setup-check`, `launch`, `reset-pin`) without asking each time; any other command, including installing Node.js or Claude Code, still asks you first.
 
 **2.** Start it:
 
@@ -104,7 +104,7 @@ Kids (under 13) get short questions and picture cards. Teens (13–17) see and a
 Nothing in this plugin runs until you type `/build-with-me:start`, so you can have your own Claude read the code first and answer one simple question: is it safe to install? Open Claude Code in an empty folder and paste this (it uses a little of your plan). It looks for serious problems only, not every possible bug; if you want a deeper review, edit the prompt before you run it.
 
 ```
-Clone https://github.com/paveliko123/build-with-me-at-home.git into a new folder. Read the
+Clone https://github.com/paveliko123/build-with-me.git into a new folder. Read the
 code only: don't run any of it, don't run npm install, don't start it.
 
 I want a quick "is it safe to install?" check as a Claude Code plugin, not a full audit.

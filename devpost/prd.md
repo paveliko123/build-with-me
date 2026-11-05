@@ -3,7 +3,7 @@ doc: prd
 status: approved
 ---
 
-# Build With Me at Home — Product Requirements
+# Build With Me — Product Requirements
 
 A local app on the family's computer. A parent gives one of their kids a timed, one-use pass, and the kid **talks** their way through the plan-first journey (start → idea → design → tech plan → build → ship) to a real working app, on the laptop or a tablet on the home Wi-Fi. Everything runs on the parent's own signed-in Claude Code. Every finished app ends in two places: a link on the kid's **My apps** shelf, and a **parent report** in the Parent area.
 Source: `scope.md > The Unique Kernel`, `scope.md > Who It's For`.

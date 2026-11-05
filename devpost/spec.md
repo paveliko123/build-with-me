@@ -3,7 +3,7 @@ doc: spec
 status: approved
 ---
 
-# Build With Me at Home — Technical Spec
+# Build With Me — Technical Spec
 
 Implements `prd.md` (approved 2026-10-06). It reuses Build With Me's kid screens and prompt layers. The cloud back office (Firebase, Firestore, API key) becomes one small program on the family's computer that talks to the parent's own Claude Code.
 
@@ -110,7 +110,7 @@ The mix is one setting in `server/journey/claude.ts` (`DEFAULT_MIX`, or `BWM_MIX
 
 ## Where It Runs and How Someone Tries It
 
-- **Public repository (2026-10-22):** https://github.com/paveliko123/build-with-me-at-home. Parents install the plugin from it (README > Install); feedback goes to its Issues.
+- **Public repository (2026-10-22):** https://github.com/paveliko123/build-with-me. Parents install the plugin from it (README > Install); feedback goes to its Issues.
 - **Runs on:** the parent's Windows or Mac computer, with Node.js 22+ and the **standalone Claude Code CLI** (`claude`) installed and signed in (any plan that includes Claude Code).
   - The Claude desktop app's Code tab doesn't count. It doesn't put `claude` on PATH, and its sign-in isn't usable by other programs.
   - Setup offers the official installer and walks the parent through `/login` once (see `checklist.md > Revisions`).
@@ -119,7 +119,7 @@ The mix is one setting in `server/journey/claude.ts` (`DEFAULT_MIX`, or `BWM_MIX
   - a tablet on the same Wi-Fi at `https://<laptop's home address>:4748`
 - **Install:** paste the README's install line into Claude Code, or run the two commands yourself:
   ```
-  /plugin marketplace add https://github.com/paveliko123/build-with-me-at-home.git
+  /plugin marketplace add https://github.com/paveliko123/build-with-me.git
   /plugin install build-with-me@build-with-me-home
   ```
   Then type `/build-with-me:start`. The full `https://` address matters: the short `user/repo` form clones over SSH, which failed in the clean-install test on a computer without GitHub SSH keys.

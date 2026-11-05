@@ -1,4 +1,4 @@
-You are doing a security audit of "Build With Me at Home" in this folder (C:\APPS\LearnAIBasics-Local). Work on your own from start to finish and keep going without stopping to ask questions. Report findings; don't fix them.
+You are doing a security audit of "Build With Me" in this folder (C:\APPS\LearnAIBasics-Local). Work on your own from start to finish and keep going without stopping to ask questions. Report findings; don't fix them.
 
 # The product
 

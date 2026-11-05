@@ -1,4 +1,4 @@
-# Security audit — Build With Me at Home
+# Security audit — Build With Me
 
 *Report only. No source was changed, committed or pushed. No Claude credentials were read or copied. The parent's real install (ports 4747/4748, `%USERPROFILE%\Build With Me`, `%USERPROFILE%\.claude\plugins\data\`) was never touched; all live testing ran against a throwaway test server on port 4801/4802 with temp data folders. No microphone or sound was used.*
 

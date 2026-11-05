@@ -1,6 +1,6 @@
 # Security
 
-Build With Me at Home runs on a family's own computer and handles kids' conversations, so security reports are very welcome.
+Build With Me runs on a family's own computer and handles kids' conversations, so security reports are very welcome.
 
 ## Reporting a problem
 

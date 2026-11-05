@@ -62,12 +62,12 @@ The finished app runs in `VisualPane`'s sandboxed frame from `srcDoc`, which alr
 
 ## Hosting in a sub-folder
 
-The address will be `https://paveliko123.github.io/build-with-me-at-home/`, so nothing may use a root-absolute path.
+The address will be `https://paveliko123.github.io/build-with-me/`, so nothing may use a root-absolute path.
 
 - A separate config, `vite.demo.config.ts` (new file; the real `vite.config.ts` is not edited): `root: 'web'` (so Tailwind finds the same class names as the real build), `base: './'` (relative paths work in any folder), `build.outDir: '../demo-dist'`, two page entries at the `web/` level (`web/demo-index.html` = landing page, no React; `web/demo-try.html` = the demo; the real build only reads `web/index.html`, so it ignores them), and the swap plugin above. The output step renames them to `index.html` and `try.html` in the same folder, so the relative asset paths stay right.
 - `publicDir` is off for the demo. Only what the demo needs is copied in: `icon.png`. **Not published:** `talk-test.html` and `lib/recorder.js` (the real `web/public/` files), anything from `server/` except `ideaLibrary.json`, and the repository's other files.
 - The landing page's **Try the demo** button links to `try.html` (relative).
-- Local test: serve `demo-dist/` from a sub-folder path (for example `/build-with-me-at-home/`) and click through, so a root-absolute path shows up as a broken page.
+- Local test: serve `demo-dist/` from a sub-folder path (for example `/build-with-me/`) and click through, so a root-absolute path shows up as a broken page.
 - Idea list: the demo imports `server/journey/ideaLibrary.json` (128 ideas) as it is, and picks three per tap with the same rules as `server/journey/ideas.ts` (age group, look, and not repeating).
 
 ## Microphone and voice
@@ -102,7 +102,7 @@ Parent side: the fake state machine goes first run (Claude "found and signed in"
 3. **Canned content:** `web/demo/script.ts` (family, turns, documents, build phases, game, report).
 4. **Landing page and screenshots** from the approved mockup, with screenshots taken from the demo.
 5. **Checks and independent code review** of the diff (a separate reviewer agent), then a fix round.
-6. **Hosting (after the owner's yes):** GitHub Pages for the public repo (free for public repos on GitHub Free: Researched, https://docs.github.com/en/get-started/learning-about-github/githubs-plans; site limits of 1 GB and about 100 GB a month of traffic: Researched, https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits). Proposal: a small GitHub Actions workflow that publishes **only when started by hand (`workflow_dispatch`) after the owner's yes**, not on each push (decision X-3 below). The address is `https://paveliko123.github.io/build-with-me-at-home/` (Estimate: the standard pattern; confirmed once Pages is on). Turning Pages on is a repository setting (Estimate: Settings › Pages › Source "GitHub Actions"; path not checked): the owner clicks it, or Claude does it with `gh` after a yes.
+6. **Hosting (after the owner's yes):** GitHub Pages for the public repo (free for public repos on GitHub Free: Researched, https://docs.github.com/en/get-started/learning-about-github/githubs-plans; site limits of 1 GB and about 100 GB a month of traffic: Researched, https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits). Proposal: a small GitHub Actions workflow that publishes **only when started by hand (`workflow_dispatch`) after the owner's yes**, not on each push (decision X-3 below). The address is `https://paveliko123.github.io/build-with-me/` (Estimate: the standard pattern; confirmed once Pages is on). Turning Pages on is a repository setting (Estimate: Settings › Pages › Source "GitHub Actions"; path not checked): the owner clicks it, or Claude does it with `gh` after a yes.
 
 **Typecheck:** `web/tsconfig.demo.json` includes `web/src` and `web/demo`. The canned answers are typed **by route**: one table maps each path to its response type (`ParentState`, `Kid[]`, `GuideTurnResult`, `ShelfApp`, and so on, imported as types), so a wrong shape in a canned answer fails `npm run typecheck`. The real `api<T = any>` call sites are not checked against the table; the click-through test covers that.
 
