@@ -162,9 +162,10 @@ Hi <name>,
 I read <specific post>: <one honest sentence about what stuck with you>.
 
 I made a free, open-source Claude Code plugin for doing this with my own kids at home.
-Your kid talks with a guide through six steps (start, idea, design, plan, build, ship) on your
-laptop or a tablet, under your own Claude plan. Their sessions can't touch your files, a
-separate Claude call checks what's said both ways, and you get a report after each app.
+My kids talk with a guide through six steps (start, idea, design, plan, build, ship) on my
+laptop or a tablet, under my own Claude plan. Their sessions can't touch my files, a
+separate Claude call checks what's said both ways, and I get a report after each app.
+Whether it fits another family is each parent's call.
 
 2½-minute walkthrough: https://youtu.be/DFgWYG4G0kE
 Browser demo: https://paveliko123.github.io/build-with-me/
