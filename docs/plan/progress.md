@@ -74,10 +74,10 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Card D-39: under-18 answer No (owner 2026-11-05)
   - [x] awesome-claude-code submitted: issue hesreallyhim/awesome-claude-code#3491 (owner 2026-11-05)
   - [x] mods4claude submitted, Commands (owner 2026-11-05); hand review
-  - [x] ClaudePluginHub submitted (owner 2026-11-05); indexing within hours
+  - [x] ClaudePluginHub listed 2026-11-05: claudepluginhub.com/plugins/paveliko123-build-with-me
   - [x] Your Validate: sizes OK; icon added (A-12)
   - [x] Anthropic directory submitted (owner 2026-11-05); held for security scan and policy review
-  - [ ] Check results: Anthropic Submissions, issue #3491, mods4claude, ClaudePluginHub
+  - [ ] Check results: Anthropic Submissions, issue #3491, mods4claude
 
 ## Checks of 0.1.2 on the real app
 - [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop <!-- docs\design\checklist.md:351, :374, :425 -->
