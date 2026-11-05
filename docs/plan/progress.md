@@ -86,7 +86,8 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [ ] Your yes and publish: dev.to post
 
 ## Checks of 0.1.2 on the real app
-- [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop <!-- docs\design\checklist.md:351, :374, :425 -->
+- [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop
+  <!-- where each check is described: docs\design\checklist.md:351, :374, :425 -->
 
 ## Hardening · open security-audit items
 - [ ] ST-3 Safety review round 2, priority 3: a second secret for the parent cookie, tablet setup as a POST, unlocking in a browser with a kid's pass, a trace on PIN reset, telemetry opt-outs for kids' runs, README disclosures, app emojis checked, starter ideas · released after ST-1 <!-- docs\design\security-audit.md:54; docs\design\spec.md:406 -->
