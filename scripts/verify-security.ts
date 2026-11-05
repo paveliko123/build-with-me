@@ -1,4 +1,4 @@
-// Security audit fixes (devpost/security-audit.md, step 1): runs the real server in-process on a
+// Security audit fixes (docs/design/security-audit.md, step 1): runs the real server in-process on a
 // test port with a temporary family folder. No Claude calls: "claude" points at a file that
 // can't start (also the A7 check), and simulate-limit answers every journey call. Silent.
 // Run: npm run verify:security   (after npm run build:web)

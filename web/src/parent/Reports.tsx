@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { api } from '../lib/api';
 
 // prd.md > The Parent Report, Limit Reached, Screens and Layout (All reports, One report),
-// laid out like devpost/report-mockup.html.
+// laid out like docs/design/report-mockup.html.
 
 export interface ReportItem {
   id: string; kidId: string; kidName: string; group: 'kid' | 'teen'; createdAt: number; startedAt: number; endedAt: number;

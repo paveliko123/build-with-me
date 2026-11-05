@@ -43,7 +43,7 @@ export const MIXES: Record<MixId, Mix> = {
   B: { id: 'B', guide: 'sonnet', check: 'sonnet', builder: 'opus', forkChecks: true },
   C: { id: 'C', guide: 'opus', check: 'opus', builder: 'opus', forkChecks: false },
 };
-export const DEFAULT_MIX: MixId = 'B'; // chosen from E3 (devpost/usage-experiment.html): the fastest turns
+export const DEFAULT_MIX: MixId = 'B'; // chosen from E3 (docs/design/usage-experiment.html): the fastest turns
 let mixId: MixId = (process.env.BWM_MIX ?? '') in MIXES ? (process.env.BWM_MIX as MixId) : DEFAULT_MIX;
 export const currentMix = (): Mix => MIXES[mixId];
 export function setMix(id: MixId) { mixId = id; }

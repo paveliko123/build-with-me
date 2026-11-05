@@ -22,4 +22,4 @@ Only the latest version is supported.
 - Someone who already controls the computer or the parent's user account.
 - The Claude models' own behavior, beyond the app's safety checks; report those to Anthropic.
 
-The project's own security review, with what was fixed, is in [devpost/security-audit.md](devpost/security-audit.md).
+The project's own security review, with what was fixed, is in [docs/design/security-audit.md](docs/design/security-audit.md).

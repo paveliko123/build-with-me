@@ -1,4 +1,4 @@
-/* Parent side, from devpost/parent-mockup.html (spec.md > Look and Feel). Scoped under .parent. */
+/* Parent side, from docs/design/parent-mockup.html (spec.md > Look and Feel). Scoped under .parent. */
 .parent{
   --bg:#f6f4ef; --card:#fff; --ink:#1f2430; --muted:#5d6475; --line:#e4ded3;
   --brand:#2f9e6e; --brand-soft:#dff3e9; --kid:#3a8ee2; --kid-soft:#e1eefc; --teen:#8a5cd6; --teen-soft:#eee6fb;

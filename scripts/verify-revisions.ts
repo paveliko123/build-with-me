@@ -1,4 +1,4 @@
-// Revision round after the family trial (devpost/ui-review.md > Family trial notes): runs the real
+// Revision round after the family trial (docs/design/ui-review.md > Family trial notes): runs the real
 // server in-process on a test port with a temporary family folder. No Claude calls: "claude"
 // points at a file that can't start, and simulate-limit answers every journey call. Silent.
 // Run: npm run verify:revisions   (after npm run build:web)

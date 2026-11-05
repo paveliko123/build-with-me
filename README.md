@@ -289,13 +289,13 @@ npm run dev:web       # the front end with hot reload (in a second terminal)
 - ✅ `npm run typecheck`, and the checks that make no Claude calls: `npm run verify:revisions`, `npm run verify:security`, `npm run test:guard`.
 - 📦 `npm run release` type-checks, runs those checks, builds the front end and the server into `app/dist/` and scans it for private data. `app/dist/` is committed, so families never need a build step.
 - 🔌 Try the plugin from this folder with `claude --plugin-dir .`.
-- 📚 The planning documents (scope, product requirements, technical spec, build checklist, security audit) are in `devpost/`; the `.html` files are the easiest to read.
+- 📚 The planning documents (scope, product requirements, technical spec, build checklist, security audit) are in `docs/design/`; the `.html` files are the easiest to read.
 
 ---
 
 <a id="license"></a>
 ## 📜 Credits and license
 
-MIT License; see [LICENSE](LICENSE). The guide's stage instructions are the Devpost Learn "Build With AI: Basics" course skills, used under their own MIT License (Copyright (c) 2026 Devpost); see [app/skills](app/skills).
+MIT License; see [LICENSE](LICENSE). The course skills in `app/skills` come from Devpost's Build With AI: Basics course (MIT, [app/skills/LICENSE](app/skills/LICENSE)).
 
 🔐 Security issues: see [SECURITY.md](SECURITY.md).

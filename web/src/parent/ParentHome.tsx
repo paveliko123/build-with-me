@@ -6,7 +6,7 @@ import { AllReports, AttentionCard, LatestReports, ReportView, type AlertItem, t
 import { KidForm } from './KidForm';
 import { PinPad } from './PinPad';
 
-// prd.md > Screens and Layout (parent home), laid out like devpost/parent-mockup.html.
+// prd.md > Screens and Layout (parent home), laid out like docs/design/parent-mockup.html.
 // Reports (slice 7) plug into the cards marked below. Passes update live over SSE.
 export function ParentHome({ onLock }: { onLock: () => void }) {
   const [status, setStatus] = useState<Status | null>(null);
