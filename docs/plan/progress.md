@@ -69,7 +69,7 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] Build live: three app GIFs
   - [x] Check each for personal details and size
   - [x] README swap and publish
-- [>] ST-9 Week 1 listings: Anthropic directory, awesome-claude-code, mods4claude, ClaudePluginHub (plan §5.1) · est 12m · est 3.1% · started 2026-11-05 15:50 · drafts: docs/plan/listings-week1.md · resumes: recheck 2026-11-09
+- [x] ST-9 Week 1 listings: Anthropic directory, awesome-claude-code, mods4claude, ClaudePluginHub (plan §5.1) · est 12m · est 3.1% · drafts: docs/plan/listings-week1.md · 2026-11-05 → 2026-11-10 (project closed by owner)
   - [x] Draft: four entries
   - [x] Card D-39: under-18 answer No (owner 2026-11-05)
   - [x] awesome-claude-code submitted: issue hesreallyhim/awesome-claude-code#3491 (owner 2026-11-05)
@@ -77,21 +77,21 @@ The plan-progress mod reads this file (the band and `/progress`); keep it curren
   - [x] ClaudePluginHub listed 2026-11-05: claudepluginhub.com/plugins/paveliko123-build-with-me
   - [x] Your Validate: sizes OK; icon added (A-12)
   - [x] Anthropic directory submitted (owner 2026-11-05); held for security scan and policy review
-  - [ ] Check results: Anthropic Submissions, issue #3491, mods4claude
+  - [x] Check results: Anthropic Submissions, issue #3491, mods4claude · closed with the project
 
-- [>] ST-11 Week 2: Nerdy Parents Club email, dev.to write-up (plan §5.2, §5.3) · started 2026-11-05 · drafts: docs/plan/outreach-week2.md
+- [x] ST-11 Week 2: Nerdy Parents Club email, dev.to write-up (plan §5.2, §5.3) · drafts: docs/plan/outreach-week2.md · 2026-11-05 → 2026-11-10 (project closed by owner)
   - [x] Draft: club email
-  - [!] Your yes and send: club email · needs you: yes, then send from Gmail
+  - [x] Your yes and send: club email · closed with the project
   - [x] Fit check of remaining venues and people (2026-11-05)
-  - [ ] Draft: dev.to post
-  - [ ] Your yes and publish: dev.to post
+  - [x] Draft: dev.to post · closed with the project
+  - [x] Your yes and publish: dev.to post · closed with the project
 
 ## Checks of 0.1.2 on the real app
-- [ ] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · needs you: try the four on the laptop
+- [x] ST-2 Your checks on the laptop: the guide's first spoken letter after a restart (D-9), a change list built by itself when a build ends (D-16), the app name pre-filled at Ship (D-14), signing in to Claude again with the button · 2026-11-10 (project closed by owner)
   <!-- where each check is described: docs\design\checklist.md:351, :374, :425 -->
 
 ## Hardening · open security-audit items
-- [ ] ST-3 Safety review round 2, priority 3: a second secret for the parent cookie, tablet setup as a POST, unlocking in a browser with a kid's pass, a trace on PIN reset, telemetry opt-outs for kids' runs, README disclosures, app emojis checked, starter ideas · released after ST-1 <!-- docs\design\security-audit.md:54; docs\design\spec.md:406 -->
-- [ ] ST-4 Low and Info hardening · A4, C1, C2, C4, C5b, C7b, C7c, C8, I2, I3, I5, I7, I8 · released after ST-1 <!-- docs\design\security-audit.md:55 -->
+- [x] ST-3 Safety review round 2, priority 3: a second secret for the parent cookie, tablet setup as a POST, unlocking in a browser with a kid's pass, a trace on PIN reset, telemetry opt-outs for kids' runs, README disclosures, app emojis checked, starter ideas · 2026-11-10 (project closed by owner) <!-- docs\design\security-audit.md:54; docs\design\spec.md:406 -->
+- [x] ST-4 Low and Info hardening · A4, C1, C2, C4, C5b, C7b, C7c, C8, I2, I3, I5, I7, I8 · 2026-11-10 (project closed by owner) <!-- docs\design\security-audit.md:55 -->
 
 <!-- Ideas, not planned: sharing outside the home, a more natural voice, the behind-the-scenes learning session (docs\design\prd.md:313-317); email or text alerts, a pause button, per-kid daily budgets (prd.md:319-322); the thumbnail's look (checklist.md:345-347). -->
